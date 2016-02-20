@@ -1,0 +1,1693 @@
+# -*- Mode: Org -*-
+#+TITLE:     The Principles of an Ethical Reading Program
+#+AUTHOR:    Michael Pagan
+#+DATE:      January 30, 2016
+#+EMAIL:     mailto:michael.pagan@member.fsf.org
+#+SUBTITLE:  =The future of free/libre eBooks=
+
+#+LATEX_CLASS:         book
+#+LATEX_CLASS_OPTIONS: [oneside]
+#+LATEX_HEADER:        \usepackage{color,soul}
+#+LATEX_HEADER:        \usepackage[margin=1.0in]{geometry}
+#+LATEX_HEADER:        \newcommand{\adjustimg}{% Horizontal adjustment of image
+#+LATEX_HEADER:        }
+#+LATEX_HEADER:        \newcommand{\centerimg}[2][width=\textwidth]{% Center an image
+#+LATEX_HEADER:          \makebox[\textwidth]{\adjustimg\includegraphics[#1]{#2}}%
+#+LATEX_HEADER:        }
+#+LATEX_HEADER:        \clearpage\thispagestyle{empty}
+#+LATEX_HEADER:        \noindent\centerimg[width=\paperwidth,height=\paperwidth]{cover.jpg}
+
+#+MACRO: creator   [[http://www.gnu.org/software/emacs/][Emacs]] 24.5.1 ([[http://orgmode.org/][Org]] mode 8.3.2)
+#+MACRO: updated   {{{time(%B)}}} {{{time(%d)}}}, {{{time(%Y)}}} at {{{time(%T)}}}
+#+MACRO: version   Version 0.1-- last updated on {{{updated}}}
+#+MACRO: img-url   @@html:<a href="$1" title="$2" target="_blank"><img alt="$3" src="$4" width="$5" /></a>@@
+#+MACRO: img-url-2 @@html:<img alt="$1" title="$2" src="$3" width="$4" align="$5" /></a>@@
+#+MACRO: emphasize @@html:<b><center><div style="background-color: $1; color: $2;">$3</div></center></b>@@
+
+#+OPTIONS: reveal_center:t reveal_progress:t reveal_history:nil reveal_control:t
+#+OPTIONS: reveal_rolling_links:t reveal_keyboard:t reveal_overview:t num:nil
+#+OPTIONS: reveal_width:1200 reveal_height:800
+#+OPTIONS: toc:1
+#+OPTIONS: html5-fancy:t
+#+REVEAL_MARGIN: 0.1
+#+REVEAL_MIN_SCALE: 0.5
+#+REVEAL_MAX_SCALE: 2.5
+#+REVEAL_TRANS: cube
+#+REVEAL_THEME: moon
+#+REVEAL_HLEVEL: 2
+#+REVEAL_HEAD_PREAMBLE: <meta name="description" content="Org-Reveal Introduction.">
+#+REVEAL_POSTAMBLE: <p> Created by yjwen. </p>
+#+REVEAL_PLUGINS: (markdown notes)
+#+REVEAL_EXTRA_CSS: ./local.css
+#+STARTUP:  showeverything
+#+LANGUAGE: en
+
+{{{img-url(http://freedomdefined.org/Licenses/GNU_FDL_1.2,GNU Free Documentation License (Human Readable),GNU Free Documentation License (Human Readable),http://www.nongnu.org/genshiken/img/GFDL-Button.png,4%)}}}
+{{{img-url(http://www.kopimi.com/index.html,Kopimi,Kopimi,http://www.nongnu.org/genshiken/img/american-kopimi.png,9%)}}}
+{{{img-url(http://wikieducator.org/Libre/Knowledge,Libre Knowledge,Libre Knowledge,https://upload.wikimedia.org/wikipedia/commons/5/52/Libre_Knowledge_Culture_Society_%28PNG%29.png,5%)}}}
+#+TOC: headlines 1
+* Let's kick off: The start of the Professional Reading Program!
+  #+LATEX: \begin{center}\textcolor{red}{\textbf{\hl{Oorah, Marines!}}}\end{center}
+  #+ATTR_REVEAL: :frag t
+  {{{img-url-2(Demotivational Poster,Demotivational Poster,http://www.thelinemedia.com/galleries/Features/issue_158/800px-little_free_library\,_easthampton_ma.jpg,30%,left)}}}
+  #+ATTR_REVEAL: :frag t
+  *Fantasy: (Metropolis)* \\
+  You ask the Librarian to sign out some books. \\
+  She does!  She'll even /personally/ deliver them, too!
+  -----
+  \\
+  \\
+  #+ATTR_REVEAL: :frag t
+  {{{img-url-2(Demotivational Poster,Demotivational Poster,http://s3.zerochan.net/Demotivational.Poster.240.362061.jpg,30%,left)}}}
+  #+ATTR_REVEAL: :frag t
+  *Reality: (Gotham City)* \\
+  You ask the Librarian to sign out some books. \\
+  She does so using a quill in her left hand, and a g... _is that a gun_!?
+  She then warns you to return the book on time... /or else/.
+
+  #+BEGIN_NOTES
+  It's not always possible to go to the base library to borrow a book, and
+  there's always a chance that they might only have a limited number of
+  copies per book, or maybe even none at all.
+
+  In light of all this, we will be using digital copies whenever we can.
+  In order to ensure that everyone can access and read these copies: The
+  files will only be distributed if it is written in a [[https://www.fsf.org/campaigns/opendocument/reject][free and/or
+  universally implemented format (e.g. OpenDocument format, PDF, etc)]]
+  #+END_NOTES
+*** Let's Read-- What does freedom have to do with reading?
+  {{{img-url(http://www.ala.org/advocacy/intfreedom/statementspols/freedomreadstatement,The Right to Read,The Right to Read,http://www.girlslife.com/image.axd?i=37078,)}}} \\
+  While there are [[https://www.fsf.org/bulletin/2011/spring/the-danger-of-ebooks][several reasons to reject nonfree eBook formats]]...
+  [[http://www.defectivebydesign.org/kindle-fire][several]], the main reason is to promote accessibility between all users,
+  and to encourage [[http://www.gnu.org/philosophy/right-to-read.html][the Right to Read]].
+
+  #+BEGIN_NOTES
+  When I first started researching about the /Marine Corps Professional
+  Reading Program/, my first step was to read about the official guidance--
+  =ALMAR 001/13=.  It seemed like a solid plan; however, it's current
+  execution is flawed!  Most purveyors of eBooks utilize nonfree
+  technology, nonfree formats, and maintain restrictions on accessing
+  books.  Most authors, unfortunately, also distribute books using nonfree
+  licensing which contain restrictions on the use of books, and prevents
+  sharing.  The execution of the /Marine Corps Professional Reading
+  Program/ is not flawed due to any fault of Marines; it is flawed, because
+  we rely on defective technologies (i.e. Nonfree Software; nonfree
+  formats; malicious technical measures; more about this later) and
+  restrictive policies (i.e. nonfree licensing; price barriers and/or
+  access barriers; etc .) which we are not always in a position to fix.
+
+  These aforementioned obstacles do *NOT* promote reading-- they hinder it!
+  The first step in solving this problem is to recognize its existence.
+  Once we've acknowledged that, we can begin to circumvent these obstacles
+  and start supporting ethical authors, purveyors, organizations,
+  technologies, and distribution websites.  Once everyone has recognized
+  this problem, only then can it be solved and circumvention will no
+  longer be required.
+  #+END_NOTES
+*** Let's Read-- Encryption is for private messages, not public ones!
+    {{{img-url(http://www.gutenberg.org/ebooks/17195,A Message to Garcia,A Message to Garcia,http://www.gutenberg.org/cache/epub/17195/pg17195.cover.medium.jpg,20%)}}} \\
+
+    If defective digital technologies did not exist, then /anyone/ would be
+    able to read /A Message to Garcia/.  Does it make sense to add a
+    /Technological Protection Measure/ to books that are in the *Public
+    Domain*?  How can we spread a message, when specific technologies
+    scramble the text in the message (i.e. Encryption), and then encodes
+    said messages into secret formats?
+
+    #+BEGIN_NOTES
+    I will explain the consequences of accepting defective technologies and
+    restrictive licensing or policies below, and why we should reject them on
+    principle.  An example of a freely[fn:1] licensed eBook from the
+    /Commandant's Professional Reading List/, which is encoded in a free
+    format (the Kindle version is *NOT* a free format-- _avoid it_; I'll
+    explain in more detail below), is located at
+    http://www.gutenberg.org/ebooks/17195.  Such a book can be freely read,
+    copied, and shared without any legal consequences-- provided that the
+    user reads and abides by the license.  Official Marine Corps guidance on
+    the professional reading program is also provided, as well as resources
+    for Marines if they wish to continue their reading or education online.
+    #+END_NOTES
+*** Let's Read-- Professionals read to learn more about their professions
+  [[http://dangerousintersection.org/wp-content/uploads/2012/04/misspelling.jpg]]
+
+  #+BEGIN_NOTES
+  As you can see, reading can be fun!  More importantly, eBooks can be
+  educational, and can present new ideas and concepts that can inspire
+  critical thinking, while fine-tuning your awareness of ethics-- which
+  plays an important role in what choices you make!  This is exactly what
+  I've set out to do in this eBook, and I welcome your feedback.
+
+  A guide is provided for future authors who are willing to contribute
+  books that can be freely used and distributed, so that we can have
+  control of the knowledge without the interference of a proprietor.
+  #+END_NOTES
+* Is there any official guidance on the /Commandant's Professional Reading Program/?
+  + *READING IN THE MARINE CORPS... "THIRTY YEAR OLD BODY AND 5000 YEAR OLD
+    MIND:* \\
+    #+ATTR_REVEAL: :frag t
+    - [[https://www.mca-marines.org/files/CMC%20White%20Letter%204-12.pdf][CMC White Letter 4-12]]
+    #+ATTR_REVEAL: :frag t
+    - [[http://www.marines.mil/News/Messages/MessagesDisplay/tabid/13286/Article/136236/revision-of-the-commandants-professional-reading-list.aspx][ALMAR 001/13]]
+    #+ATTR_REVEAL: :frag t
+    - [[http://www.marines.mil/Portals/59/MCO%201553.4B.pdf][MCO 1553.4B]]
+    #+ATTR_REVEAL: :frag t
+    - [[http://www.hqmc.marines.mil/Portals/133/Docs/MCO%20P1610_7F%20W%20CH%201-2.pdf][MCO P1610.7F]]
+  + Are there any discussion guides available?
+    #+ATTR_REVEAL: :frag t
+    - [[http://www.mcu.usmc.mil/sites/leadership/fidelity/VBLT/Eternal%20Student%20Discussion.pdf][Guided Discussion - The Eternal Student]]
+    #+ATTR_REVEAL: :frag t
+    - [[http://www.au.af.mil/au/awc/awcgate/mentor/chap07va.htm][User's Guide to Marine Corps Values - MENTORING]]
+    #+ATTR_REVEAL: :frag t
+    - [[http://guides.grc.usmcu.edu/discuss][Discussion Guides for the /Commandant's Professional Reading List/]]
+  #+BEGIN_NOTES
+  - General James F. Amos, our last Commandant, explains the reason why
+    Marines must continue to read, and to study more about their
+    professions.
+  - This resource represents the current official guidelines for the
+    /Commandant's Professional Reading Program/.  Marines are required to
+    read at least 3 books from the reading list each year.
+  - This resource represents the Marine Corps Order on /Professional
+    Military Education/ (PME).  Page 4 of the order details the
+    objectives behind the /Marine Corps Professional Reading Program/.
+  - This resource represents the Marine Corps Order on the /Performance
+    Evaluation System/.  This order provides policies and procedures for
+    submitting and grading *Fitness Reports*.  /Section G/ of the /Fitness
+    Report/ , *Intellect and Wisdom*, pertains to PME; located on pages
+    *4-35* to *4-38*; =measures the= /Marine Reported On/'s =efforts to
+    grow intellectually and to use the knowledge gained to benefit both=
+    =personal and unit performance.= \\
+
+    A personal reading program is considered to be one of the most
+    invaluable resources for defining a Marines commitment to
+    intellectual growth, which is beneficial to the Marine Corps;
+    selections of books are not limited to just the /Marine Corps
+    Professional Reading Program/.  What's important is that Marines
+    concentrate on subjects that improve their leadership and warfighting
+    abilities-- *Part V* and *Part VI* of this eBook seeks to provide
+    resources to aid Marines in finding eBooks, and studying
+    military-related topics.
+  #+END_NOTES
+  #+REVEAL: split
+  + Are there any resources for Marine Leaders?
+    #+ATTR_REVEAL: :frag t
+    - [[http://www.mcu.usmc.mil/sites/leadership/Leaders%20Note%20Book/Marine%20Leaders%20Notebook.pdf][The Marine Leaders Notebook]]
+    #+ATTR_REVEAL: :frag t
+    - [[http://www.mcu.usmc.mil/sites/leadership/Orders/BNO%201500%20LDP.pdf][The Leadership Development Program]]
+  + Are there any more resources for Professional Military Education (PME)?
+    #+ATTR_REVEAL: :frag t
+    - [[http://www.marines.mil/Portals/59/Publications/NAVMC%20DIR%201500.58.pdf][NAVMC Dir 1500.58]]
+      #+ATTR_REVEAL: :frag t
+      + [[http://www.marines.mil/Portals/59/Publications/MCO%201510.121A.pdf][Marine Corps Common Skills (MCCS) Program]]
+      #+ATTR_REVEAL: :frag t
+      + [[http://newyorkmarinecadets.org/files/Common_Skills_Handbook_USMC.pdf][Marine Corps Common Skills (MCCS) Handbook VOL. I]]
+      #+ATTR_REVEAL: :frag t
+      + [[http://www.marines.mil/Portals/59/Publications/NAVMC%203500.19.pdf][Marine Corps Common Skills (MCCS) Handbook VOL. II]]
+    #+ATTR_REVEAL: :frag t
+    - [[http://www.mcuf.org/about_mcu.html][Marine Corps University]]
+      #+ATTR_REVEAL: :frag t
+      + [[http://www.mcu.usmc.mil/sites/leadership/fighter/Professional%20Military%20Education/Professional%20Military%20Education.pdf][PME Requirements Checklist]]
+      #+ATTR_REVEAL: :frag t
+      + [[https://www.mcu.usmc.mil/epme/EPME%20Documents/Enlisted%20Education%20Opportunities.pdf][Enlisted Professional Military Education Opportunities]]
+    #+ATTR_REVEAL: :frag t
+    - [[https://www.mcu.usmc.mil/cdet/SitePages/home.aspx][USMC's College of Distance Education and Training (CDET)]]
+    #+BEGIN_NOTES
+      + This resource represents the /Marine Corps Mentoring Program/ (MCMP)
+        Guidebook.  This eBook is informative, and helps to reinforce the
+        "*whole Marine concept*."
+      + This resource is located online, and contains a listing of
+        several Military schools for advancement.
+    - [[https://archive.org/details/leadingmarinesus00usma][Leading Marines]] is a prerequisite, for it instills the ethos
+    - The College of Distance Education and Training is the organization
+      within the Marine Corps Education Command (EDCOM) with the mission
+      to design, develop, deliver, evaluate, manage, and resource distance
+      learning products and programs across the Marine Corps training and
+      education continuum in order to increase operational readiness. 
+    #+END_NOTES
+* What principles do I propose for supporting an ethical reading program?
+  #+BEGIN_NOTES
+  According to `Section 6' of =ALMAR 001/13=, the Marine Corps is putting
+  forth maximum effort towards obtaining print, electronic, and audio
+  formats for each book.  This was written over 2 years ago, and acquiring
+  books is still a difficult process!  I propose an ethical execution of
+  this plan, in order to ensure that it succeeds for *MAG-49* and
+  everywhere else.  In order to do this, we need authors to start writing
+  books in a more ethical way.  Below, I attempt to detail the life-cycle
+  of creating a book in an ethical manner; from the methods we choose to
+  create a book; from the licenses we choose to release it under; from how
+  it should be encoded once we finish writing the book; and finally, from
+  how it should be released so that anyone can access it.  This very eBook
+  is written in the spirit of [[http://wikieducator.org/Libre/Knowledge][libre knowledge]], and is an example of a
+  *free* eBook.
+  #+END_NOTES
+  + I propose that four basic principles should be followed; hopefully,
+    all authors, purveyors, vendors, and libraries will follow suit-- they
+    should be applied to eBooks and printed books alike:
+*** How should authors create an eBook?
+    #+COMMENT: {{{img-url(http://www.gnu.org/,Free Software\, Free Society,Free Software\, Free Society,http://www.gnu.org/graphics/meditate.svg,30%)}}} \\
+
+    #+BEGIN_COMMENT
+    I can't figure out how this code works...
+    #+ATTR_HTML: :controls controls :width 350
+    #+BEGIN_VIDEO
+    #+HTML: <source src="https://static.fsf.org/nosvn/FSF30-video/FSF_30_video.ogv" type="video/ogg">
+    Your browser does not support the video tag.
+    #+END_VIDEO
+    #+END_COMMENT
+
+    #+BEGIN_HTML
+    <video style="width: 50%;" controls="controls" poster="http://static.fsf.org/nosvn/FSF30-video/fsf30-poster.png" crossorigin="anonymous">
+    <source src="http://static.fsf.org/nosvn/FSF30-video/FSF_30_720p.webm" type="video/webm" />
+    <track kind="subtitles" label="English" srclang="en" src="http://static.fsf.org/nosvn/FSF30-video/captions/FSF_30_720p.en.vtt" default="default" />
+    <track kind="subtitles" label="Spanish" srclang="es" src="http://static.fsf.org/nosvn/FSF30-video/captions/FSF_30_es.vtt" />
+    <track kind="subtitles" label="French" srclang="fr" src="http://static.fsf.org/nosvn/FSF30-video/captions/FSF_30_720p.fr.vtt" />
+    <track kind="subtitles" label="German" srclang="en" src="http://static.fsf.org/nosvn/FSF30-video/captions/FSF_30_720p.de.vtt" />
+    <track kind="subtitles" label="русский" srclang="ru" src="http://static.fsf.org/nosvn/FSF30-video/captions/FSF_30_720p.ru.vtt" />
+    <track kind="subtitles" label="italiano" srclang="it" src="http://static.fsf.org/nosvn/FSF30-video/captions/FSF_30_720p.it.vtt" />
+    <track kind="subtitles" label="português" srclang="pt" src="http://static.fsf.org/nosvn/FSF30-video/captions/FSF_30_720p.pt.vtt" />
+    <track kind="subtitles" label="српски" srclang="sr" src="http://static.fsf.org/nosvn/FSF30-video/captions/FSF_30_720p.sr.vtt" />
+    <track kind="subtitles" label="fārsi" srclang="fa" src="http://static.fsf.org/nosvn/FSF30-video/captions/FSF_30_720p.fa.vtt" />
+    <track kind="subtitles" label="nederlands" srclang="nl" src="http://static.fsf.org/nosvn/FSF30-video/captions/FSF_30_720p.nl.vtt" />
+    <track kind="subtitles" label="magyar" srclang="hu" src="http://static.fsf.org/nosvn/FSF30-video/captions/FSF_30_720p.hu.vtt" />
+    <track kind="subtitles" label="svenska" srclang="se" src="http://static.fsf.org/nosvn/FSF30-video/captions/FSF_30_720p.se.vtt" />
+    <track kind="subtitles" label="română" srclang="ro" src="http://static.fsf.org/nosvn/FSF30-video/captions/FSF_30_720p.ro.vtt" />
+    <track kind="subtitles" label="lietuvių" srclang="lt" src="http://static.fsf.org/nosvn/FSF30-video/captions/FSF_30_720p.lt.vtt" />
+    <track kind="subtitles" label="hebrew" srclang="lt" src="http://static.fsf.org/nosvn/FSF30-video/captions/FSF_30_720p.he.vtt" />
+    <track kind="subtitles" label="português do Brasil" srclang="pt-br" src="http://static.fsf.org/nosvn/FSF30-video/captions/FSF_30_720p.pt-br.vtt" />
+    </video>
+    #+END_HTML
+    *Free/Libre Software* \\
+
+    #+BEGIN_QUOTE
+    GNU is an operating system that is free software—that is, it respects
+    users' freedom. The development of GNU made it possible to use a
+    computer without software that would trample your freedom.
+    #+END_QUOTE
+    =-- Free Software Foundation=
+
+    #+BEGIN_NOTES
+    This particular principle is merely a recommendation-- not a
+    requisite.  The author may choose to write their book using whatever
+    technology they deem suitable for the task; likewise, the user may
+    also choose to read a book using whatever technology they deem
+    suitable for the task.  This principle is listed here, because after
+    listing the defects of Nonfree Software and formats in *Part IV* of
+    this eBook: It only makes sense to also include a solution that is
+    devoid of such defects.  While there exists a plethora of reasons for
+    using and supporting [[http://www.gnu.org/philosophy/free-sw.html][free/libre software]], I will only focus on three
+    reasons why *Free Software* should be used for creating an eBook.
+    Here is a [[http://directory.fsf.org/wiki?fulltext=Search&profile=default&title=Special%3ASearch&search=books][listing of Free Software]] that can handle opening, editing,
+    managing, creating, publishing, and collecting eBooks.
+    1. *Control* \\
+       Only *Free Software* gives users the [[https://gnu.org/philosophy/free-software-even-more-important.html][freedom to control their
+       programs]].  *Free Software* gives users the legal rights necessary
+       for controlling their software; in other words, a free/libre
+       program provides users the [[http://fsfe.org/activities/ftf/faq-what-is-licensing.en.html][permissions (via a free license)]] and the
+       means (via the [[http://fsfe.org/freesoftware/basics/sourcecode.en.html][source code]] and documentation) necessary for making
+       their programs operate the way that they wish.  An author using a
+       free/libre program will have full control of the writing process,
+       and can even verify that the program is indeed following their
+       commands by inspecting the source code of a program.  There exists
+       eBooks which are [[https://livinglibre1.files.wordpress.com/2011/04/sharethisbook_finished.pdf][freely licensed to allow modification and
+       sharing]]; however, without the source code... _you can't modify
+       it!_ \\
+        The source code represents the preferred version of a program
+       required for making changes to it.  This very eBook comes with
+       source code that can also be used as a Transparent copy of this
+       eBook for modification purposes; they include
+       =the-principles-of-an-ethical-reading-program.org= (the
+       corresponding source code of this eBook) and
+       =the-principles-of-an-ethical-reading-program.html= (the actual
+       source code of this eBook).  Knowing the freedoms that comes with
+       *Free Software*, an author is also more likely to license their
+       eBooks to have the same kinds of freedom, so that users can freely
+       use and distribute their work.
+    2. *Accessibility* \\
+       The second reason why an author should write their books using
+       *Free Software* is to promote accessibility.  A free/libre program
+       encodes its data to a free/libre format _by default_.  This is
+       important, because certain programs may not save a file in a way
+       that is accessible to all users.  Certain programs may even install
+       user-scripts into their format, and sometimes even malware!  The
+       user-scripts are harmless if they're under your control, but that
+       may not always be the case.  Malware, on the other hand, is usually
+       under the control of a proprietor who wishes to abuse and take
+       advantage of users.  It may seem far-fetched to commit such a
+       malpractice, but I can assure you that it does happen-- *Part IV*
+       of this eBook will detail these type of attacks on your freedom.
+    3. *Cooperation* \\
+       The third reason why an author should write their books using
+       *Free Software* is to promote cooperation.  If the author is
+       writing a fictional work, an art related piece, or maybe even
+       an entertaining script or poetry, then there is really no need
+       for them to provide the source code for their eBook.  If the
+       author is writing a more functional work, an instructional manual,
+       or some sort of reference book or educational work, then they may
+       want to release the source code for their work in order to gather
+       participation in the development of the eBook.  Authors that use
+       *Free Software*, are more likely to release the source code for
+       their eBooks (I will henceforth be referring to the source code
+       of documents by another term, /Transparent copy/, in order to be
+       clearer). \\
+        Why do I say this?  With *Free Software*, it is considered normal
+       for users to have access to the source code of their programs, so
+       that they can control it.  [[https://gnu.org/philosophy/free-doc.html][Free Software also needs Free
+       Documentation]], because we want users to learn *how* to control
+       their software.  Whenever we improve our software we also want to
+       update our documentation to reflect the changes.  If we create
+       version 3 of a program with twice as many features as version 2,
+       then it makes sense to also release another version of said
+       documentation; otherwise, the user won't know how to use all the
+       new features provided in the program. \\
+        /Free Documentation/ isn't just for software, though.  It can be
+       used for any type of reference or technical work.  If we
+       distribute works using licenses that do not permit this type of
+       cooperation, then whenever we need to update a work of knowledge
+       about any given subject: We would have to literally recreate that
+       knowledge, because copying said knowledge will be considered
+       illegal for it is owned by someone else that has exclusive rights
+       to the information (professors can even issue [[https://web.archive.org/web/20120403175352/http://teaching.berkeley.edu/ownership.html][Cease and Desist
+       Letters]] to students if they don't like [[http://campuspol.chance.berkeley.edu/policies/coursenotes.pdf][the way they use their
+       course notes]]); we would also have to do the same if that
+       information was encoded in a nonfree format (more on that later).
+       In contrast, if a book is released under a free license that
+       *does* permit such cooperation (such as the [[https://www.gnu.org/licenses/fdl.html][GNU Free Documentation
+       License]]), then users are able to update the book.  In essence, a
+       nonfree book is a [[https://en.wikipedia.org/wiki/Walled_garden_%28technology%29][walled-garden (just like Nonfree Software is)]],
+       while a free/libre book becomes a foundation whose knowledge users
+       can expand upon.  [[http://jimmywales.com/2004/10/21/free-knowledge-requires-free-software-and-free-file-formats/][Free Knowledge requires Free Software and Free
+       File Formats]].
+    #+END_NOTES
+*** Which license should an author apply to an eBook?
+    {{{img-url(http://freedomdefined.org/Licenses,Free Culture,Free Culture,http://www.wpclipart.com/computer/icons/file_type/license_icon.svg,25%)}}} \\
+    *Free/Libre License* \\
+
+    #+BEGIN_QUOTE
+    If authors do not take action, their works are covered by existing
+    copyright laws, which severely limit what others can and cannot do.
+    Authors can make their works free by choosing among a number of legal
+    documents known as licenses.
+    #+END_QUOTE
+    =-- Free Culture Foundation=
+
+    #+BEGIN_NOTES
+    In order to promote the right to read an eBook or printed book, and
+    share it if we like it: All versions of a book should have a license
+    that makes it legal to do so; thus, authors should apply a [[http://freedomdefined.org/Licenses][free/libre
+    license]] to their book.  The take-away: _A *Free/Libre License* respects
+    the users freedom and community._ \\
+
+    These are *free* as in freedom licenses, which has nothing to do
+    with price!  An author may choose to distribute his/her work as
+    gratis (i.e. it costs nothing), or at a price; they may even choose
+    to distribute gratis digital copies and priced physical copies, and
+    vice versa.  The key, is that an author or publisher shouldn't be in
+    control of what someone does with his/her work once a copy has been
+    acquired, because if they do: The user is *NOT* free to read and
+    share the work.  We don't want our eBooks to turn into
+    /walled-gardens/; otherwise, we can't control how we use these books.
+    No one can control the content or media inside of a /walled-garden/,
+    but they do have control of the content or media inside of a *freely*
+    licensed book.  This is why I'm pushing for authors to apply a free
+    license to their eBooks: If they can do this, then the rest of these
+    principles can be applied as well; finally, the user won't be
+    subjugated in their use of an eBook (a flaw that even [[https://stallman.org/articles/online-education.html][affects
+    universities]]).
+    #+END_NOTES
+*** How should authors save or encode an eBook file?
+    {{{img-url(http://en.wikipedia.org/wiki/Free_file_format,readily articulated\, codified\, accessed and verbalized,readily articulated\, codified\, accessed and verbalized,https://gitorious.org/document_freedom_day/artwork?p=document_freedom_day:artwork.git;a=blob_plain;f=logos/dove-logo-square.png;hb=HEAD,30%)}}} \\
+    *Free/Libre Format* \\
+    - Document Freedom adresses much more than just essays and spreadsheets,
+      it is about control of any kind of a digital data - including artwork,
+      sheet and recorded music, emails, and statistics. These can be stored
+      in ways which empower users, but they can also be stored in formats
+      which constrain and manipulate us at enormous cost. \\
+    =-- Free Software Foundation Europe e.V.=
+
+    #+BEGIN_NOTES
+    In order to promote interoperability between all devices and
+    operating systems: We must insist that eBooks are encoded in a
+    [[http://en.wikipedia.org/wiki/Free_file_format][free/libre file format]].  Nonfree formats are not recommended for
+    sharing, because they are undocumented; incompatible with [[http://documentfreedom.org/openstandards.en.html][Open
+    Standards]]; requires the use of [[https://gnu.org/philosophy/proprietary.html][Nonfree Software]]; and some,
+    unfortunately, are infected with malware.  When a document is saved
+    in a format that is documented; conforms to /Open Standards/; is
+    accessible with /Free Software/; and finally, can be revised
+    straightforwardly in a text editor: That file is considered to be a
+    Transparent copy, because it can be clearly seen and modified easily.
+    With programs, we need the source code to modify them; with
+    documents, we need a Transparent copy to modify them. \\
+
+    With a Transparent copy of an eBook, such  as a =.txt=, =.html=,
+    or =.tex= file, the user can read the book using an ordinary text
+    editor; not only that, but they can update the knowledge-- fixing
+    any typos in grammar, spelling, and diction; maybe there are
+    hyperlinks that are no longer functional anymore which need to be
+    replaced; maybe the concepts inside the eBook have advanced in
+    today's current society, to the point where the eBook is no longer
+    accurate anymore.  Wouldn't these factors warrant a new version of
+    the eBook to be released?  What if the author is not able to make
+    these changes?  How else can we release a modified version of the
+    eBook?  With *Free Software*, not only do users have *individual
+    control*, but they also have the means to exercise *collective
+    control* as well.  With /Free Documentation/, the same can be said!
+    As long as a freely licensed Transparent copy of the eBook exists,
+    *anyone* can edit the eBook and release their own modified version--
+    _without the authors permission_ (they still have to respect the
+    license; we don't want to modify invariant sections, for this would
+    alter and misrepresent an author's point-of-view). \\
+
+    Instead of sharing secret, proprietary, media files... we will only
+    share files whose formats are documented, and can be read just as
+    easily as a book can be.  Just like this very eBook adheres to a
+    documented and Open Standard, other eBooks should also be the same.
+    An eBook in a free format provides users the same freedoms that they
+    would normally have when reading a printed book.
+    #+END_NOTES
+*** Which channels should publishers distribute or upload an eBook file to?
+    {{{img-url(http://wikieducator.org/Main_Page,WikiEducator,WikiEducator,https://upload.wikimedia.org/wikipedia/en/2/2c/WikiEd.jpg,30%)}}} \\
+    *Free/Libre Access* \\
+
+    - What rules would best ensure the maximum dissemination of scientific
+      articles, and knowledge, on the web? ... The US Constitution says
+      that copyright exists “to promote the Progress of Science”.  When
+      copyright impedes the progress of science, science must push
+      copyright out of the way.
+    =-- RMS, Nature magazine's webdebates forum in 2001=
+
+    #+BEGIN_NOTES
+    If a digital copy can only be accessed by identifying yourself
+    through an authentication system, then that system itself is nonfree
+    for it has control over who accesses the book-- this goes against
+    the concept of [[https://stallman.org/articles/free-scientific-publishing.html][Free/Libre Access]] and *anonymity*.  The idea of
+    identifying yourself makes sense for borrowing a physical copy of a
+    book, because the library will now know who to contact if they don't
+    return it.  It does *NOT* make sense for digital copies, because of
+    the mere fact that it is impossible to /borrow/ something as
+    /intangible/ as digital information (i.e. one can not /physically/
+    take something that has no /physical/ form); on the contrary, it is
+    possible to copy digital information.  I can see it now as a
+    librarian asks, "=Good afternoon, Marine!  Our records indicate that
+    you borrowed a set of ones and zeroes the other day (i.e. an=
+    =eBook), and it appears that the data is now overdue.  Could you
+    please return the information to us, so that other users can read=
+    =the numbers?=" This malpractice is similar to /eBook lending/
+    (I'll explain later). \\
+
+    If the principles of *Free/Libre Access* were applied, the librarian
+    would never ask such a silly question for she would've known that
+    the Marine had made a copy, and that the original is still in the
+    library's database; also, if the principles of *anonymity* were
+    practiced, their would only be a tracking system for physical
+    copies-- not digital ones, since digital copies are not borrowed...
+    _they're copied_!  *Part V* of this eBook provides real world
+    examples of *Free/Libre Access*. \\
+
+    The main reason-- _besides money_--  why authors write books, is so
+    that people can read them.  By restricting access to books in a way
+    that only a particular audience can read it, publishers and/or
+    purveyors mistakenly send this message:  "=The author only wrote this
+    book for this particular audience, and no one else will find this=
+    =book interesting to read.="  This is why *Free/Libre Access* is so
+    important!  Authors should maintain the attitude that if they ever
+    distribute their books through restrictive channels, that it will be
+    akin to saying: "=I don't want people to read my books!="  No one
+    wants to make movies that no one will see; no one wants to make music
+    that no one will hear; by the same token, no one wants to write books
+    that no one will read.  *Free/Libre Access* allows users to make use
+    of knowledge, and to distribute it to others if they find it useful.
+    This type of cooperation fosters true education, because it allows us
+    to learn from each other via books that are licensed, formatted, and
+    distributed *freely*; however, in order to distribute an eBook
+    *freely*, access policies in libraries and websites must make it
+    legal to do so by conforming to *Free/Libre Access*.
+    #+END_NOTES
+* Why should we reject nonfree formats?
+  + Free formats include, but are not limited to: HTML, [[http://pdfreaders.org/pdfreaders.en.html][PDF]], EPUB
+    (without [[http://drm.info/][DRM]]), and plain ASCII[fn:2] text files.
+    - _That does *NOT* include [[http://www.computerweekly.com/opinion/Beware-proprietary-data-formats][nonfree formats]], such as:_
+*** =.rtf= (Microsoft's Rich Text Format)
+    {{{img-url(http://repositorium.googlecode.com/svn/trunk/RtfConverter/Word2007RTFSpec9.pdf,RTF Specification,RTF Specification,http://interglacial.com/rtf/emacs/rtf-mode-examples.png,50%)}}} \\
+    + This is a nonfree format; fortunately, Microsoft has published
+      specifications for how it works.  Unfortunately, there are
+      several different versions of this format, since it hasn't been
+      standardized (we can't standardize it, since Microsoft owns
+      it).
+
+    #+BEGIN_NOTES
+    + =RTF= represents Microsoft Word's internal markup language, and
+      the final version-- 1.9.1-- was released in 2007.  New features
+      in Word 2010 and later will not save properly to the =RTF=
+      format.
+      + This format is human-readable; however, Microsoft Word can embed
+        [[https://en.wikipedia.org/wiki/Object_Linking_and_Embedding][binary objects (i.e. OLE)]], nonfree or patented image formats,
+        and even macros into =RTF= files, which makes it insecure and
+        incompatible with other =RTF= readers.  =RTF= does not support
+        macros, but if you create a macro in a =DOC= file and then
+        rename it with an =RTF= extension, then Microsoft Word will run
+        all of the instructions in the macro anyway-- in other words,
+        the macro becomes a gateway for malware.  =RTF= comes close to
+        respecting the user's freedom; however, this format is insecure
+        and nonfree-- just like Word files are (still a bigger
+        improvement over Word, though).
+        - The vulnerability concerning Microsoft Office™ macros is not
+          theoretical, and is something that I've tested out myself.
+          Word format-- like every other file format from Microsoft
+          Office™-- is capable of storing macros, and thus =RTF= can
+          as well since Word uses =RTF= as it's internal markup
+          language.  A macro is a user-script or program that can be
+          embedded into files in order to give them extra functionality
+          that they wouldn't normally have on their own.  For instance,
+          an Excel spreadsheet may contain a button in one of its cells
+          called =Calculate=, which would call a function from a macro
+          that someone has assigned to it.  Microsoft Office™ utilizes
+          a programming language in order to allow users to write such
+          functions.  It is called /Visual Basic for Applications/
+          (VBA).
+        - Macros can be malicious, because VBA has access to Windows
+          objects and the filesystem itself.  It can be used to delete
+          a file or create one.  Since all Microsoft Office™
+          applications use the same language, and has access to each
+          others programming objects: Each Microsoft Office™
+          application has the capability of scripting the other.
+          If a user activates the /Developer Option/ in Microsoft
+          Office™, they'll have a chance to view the /VBA Project/;
+          however, they won't be able to access the listed macros if
+          the project is password-protected.
+        - If you can't freely control or even see what a program is
+          doing, then that program is *nonfree* for there is no way of
+          determining whether the program is malicious or not.  When you
+          run such a program you always exercise blind faith, because
+          the owner has concealed the truth behind how the *nonfree*
+          program operates, by restricting it via *nonfree* licensing
+          and/or withholding the source code.  A user that is not
+          familiar with macros may not understand the importance of
+          disabling them, or why it is important to be able to see the
+          source code of a macro if they trust it.  Malware is a real
+          threat in Windows, so the user should always take
+          precautions to ensure that their software is *free/libre* or
+          can be replaced by a *free/libre* program; Windows itself
+          is also *nonfree*, so relying on such a system is also an
+          example of exercising blind faith (the good news is that it
+          can also be replaced).
+        - If the threat of malicious macros seems too far-fetched and
+          you don't believe it: E-Mail me, and I'll send you an example
+          file of a macro that is password-protected, and more than
+          7,000 lines long.  It is not malware, but if I didn't also
+          provide you with the password so that you can view the source
+          code: There would be no way for you to tell the difference!
+    + If you have a Microsoft =RTF= file, and you want to send it to
+      someone in a format that respects their freedom: Convert it to
+      HTML with [[http://directory.fsf.org/wiki/RTF_to_HTML][RTF to HTML]].
+      #+END_NOTES
+*** =.doc= / =.docx= (Microsoft Word)
+    {{{img-url(http://www.gnu.org/philosophy/no-word-attachments.html,How it works is a secret...,How it works is a secret...,https://pixabay.com/static/uploads/photo/2014/02/12/06/59/confidential-264516_960_720.png,50%)}}} \\
+    + This format is based on OOXML (i.e. a patented format; XML,
+      in contrast, is an /Open Standard/); not only that, but Word
+      also utilizes formatting codes, and Microsoft Word is designed
+      to embed ASCII text in an obfuscated form.  All of this makes
+      it even harder to read Word files using different word
+      processors, because the format is binary and no longer
+      human-readable.
+
+    #+BEGIN_NOTES
+      - The main reasons for [[https://en.wikipedia.org/wiki/Obfuscated_code][obfuscating code]] is to make it hard to
+        read, and to prevent programmers from making software that
+        works with the code-- there is no other purpose!  Internet,
+        Networking, and /Open Standards/ are developed, documented,
+        and published in order to promote clear and transparent
+        communication-- this goes in stark contrast with nonfree
+        programs and formats, which are owned by a proprietor and are
+        often undocumented and hence unclear; this in turn, makes for
+        poor interoperability and hence poor communication.
+    + Since the format is undocumented, the /Free Software Movement/
+      has been reverse-engineering Word format in order to read Word
+      files; unfortunately, this effort becomes self-defeating when
+      Microsoft is in control of the format, and can [[http://www.gnu.org/philosophy/no-word-attachments.html][change Word
+      format]] at anytime.  To revise a file format in such a
+      repetitive fashion, for the purposes of: Preventing
+      interoperability with other word processors; preventing
+      compatibility with /Open Standards/; preventing
+      backwards-compatibility with other versions of the same
+      format... _is malicious_!
+    + Whilst the above reasons are substantial and should compel
+      users to reject this defective format, one reason remains to be
+      explained.  Word format should be rejected _on principle_,
+      because it is a nonfree format that requires the use of a
+      nonfree program-- a program, designed to take away the user's
+      freedom.  This is reason enough for me to reject it as a viable
+      medium for reading books-- or doing anything else, for that
+      matter.
+      - If you use Microsoft Word-- or other types of Nonfree
+        Software, and you do not understand all of the implications
+        and restrictions that comes with being a "licensee": E-Mail
+        me, and I'll forward you a copy of the EULA that comes with
+        Microsoft Office™.  Most people won't believe me until
+        they've read the fine print, and I'll gladly inform them by
+        providing a copy.  Users shouldn't be expected to be experts
+        on licensing in order to find out if a program respects their
+        freedoms or not; they should simply have the assurance that
+        it does.  When it comes to Nonfree Software, however: There
+        is no assurance; there is no freedom.
+      - If you have a Microsoft Word document, and you want to send
+        it to someone in a format that respects their freedom:
+        Convert it to plain ASCII text with [[http://directory.fsf.org/wiki/Docx2txt][Docx2txt]].
+    #+END_NOTES
+*** =.ibooks= ([[http://venomousporridge.com/post/16126436616/ibooks-author-eula-audacity][Apple's EULA]] restricts commercial distribution to Apple)
+    {{{img-url(http://roughlydrafted.com/RD/RDM.Tech.Q1.07/2A351C60-A4E5-4764-A083-FF8610E66A46.html,This is Foulplay!,This is Foulplay!,http://roughlydrafted.com/RD/RDM.Tech.Q1.07/2A351C60-A4E5-4764-A083-FF8610E66A46_files/fairplay.png,60%)}}} \\
+
+    + If [[http://www.defectivebydesign.org/macappstore][Apple's DRM, Fairplay,]] has been applied to an eBook: The
+      *DRM* will remove basic freedoms that you'd normally have when
+      reading or purchasing a printed book.  Apple puts a spin on its
+      malware by calling it /Fairplay/.  Ironically, there is nothing
+      /fair/ about taking advantage of users through the use of
+      digital restrictions-- /Foulplay/ is a better term for this
+      malware, since it's [[https://archive.org/details/drm-prevents-interoperability][designed to disobey you]].
+*** /Google Books/
+    {{{img-url(https://www.gnu.org/philosophy/who-does-that-server-really-serve,Google's server dictates your use of eBooks!,Google's server dictates your use of eBooks!,http://pinoytutorial.com/techtorial/wp-content/uploads/2010/05/evil-google-logo.jpg,30%)}}} \\
+    - These eBooks originate from https://books.google.com/ and from
+      /Google Play/, and use free formats like =EPUB= and =PDF=;
+      unfortunately, /Google Books/ are listed here, because Google
+      takes away the freedoms that you would normally have when reading
+      or purchasing a printed book.  It's hypocritical to use formats
+      that promote freedom, and then restrict said formats to take it
+      away.
+
+    #+BEGIN_NOTES
+    + Google uses Nonfree Software on their website.  Most users are
+      aware that they can't control their software if it is
+      proprietary (a.k.a. *nonfree*); however, most are not aware
+      that they can't control their computing online if their browser
+      is being fed nonfree browser scripts-- most are not aware of
+      [[http://www.gnu.org/philosophy/javascript-trap.html][the JavaScript Trap]].
+      + I /attempted/ to purchase a book via Google's website to see
+        if Google would respect my freedom to understand how the
+        purchase was being made.  Well... they failed the test!
+        Google uses a nonfree JavaScript, called [[https://wallet.google.com/inapp/lib/buy.js][buy.js]], that exists
+        only in obfuscated form (i.e. function names are 2 letters
+        long; no comments are included; no white space; no reference
+        of where the source code is; etc.).  Imagine if this eBook
+        used headings that were only 2 letters long; or if there was
+        no whitespace in between each word-- would you consider such
+        a book to be human-readable?  Even this very eBook comes
+        packaged with source code, in case other Marines would like
+        to update this documentation in their implementation of the
+        /Marine Corps Professional Reading Program/-- so, why can't
+        Google do the same for their online payment system?  They'll
+        still have control over the purchase, but at least we'll know
+        what they're doing with our payment information if the source
+        code of their JavaScript was freed.  Inevitably, since I could
+        not verify how Google would be using my payment information,
+        and since I block nonfree JavaScript on principle-- I did not
+        make the purchase.  The eBook only cost =$0.99=, but my
+        freedom and security is worth more than that.
+      + Google stores all purchased eBooks into their "cloud", which is
+        just another buzzword for saying: _Your_ file, is on [[https://www.gnu.org/philosophy/who-does-that-server-really-serve][their
+        server]].  This is unethical, because the default place that
+        _your_ files should go to is _your_ device-- not theirs.
+        Google should not require that you have an internet connection
+        in order to read a book.  That's like having a librarian tell
+        readers that they are only allowed to read books inside the
+        library, but taking the book home for you to read is forbidden.
+      + Google does provide a method for downloading some of the
+        eBooks you may purchase, but the limits are set by the
+        publisher.  If the publisher tells Google that users are not
+        allowed to download a Google eBook, then those eBooks will
+        display an alert message ("/No download files included/")
+        before you purchase the eBook.  What exactly does that mean?
+        It means that you need an internet connection in order to read
+        those books, and you'll probably have to run nonfree
+        JavaScript in order to do so-- which is a trap.
+    #+END_NOTES
+*** =.azw= / =.kf8= (Amazon Kindle; this format [[http://www.defectivebydesign.org/amazon-kindle-swindle][implements a malware anti-feature known as DRM]])
+    {{{img-url(http://novelconclusions.com/2013/02/17/drm-do-i-own-my-e-books/,Google's server dictates your use of eBooks!,Google's server dictates your use of eBooks!,http://www.epubor.com/images/uppic/open-drmed-lit-with-calibre.jpg,60%)}}} \\
+    + Amazon Kindles implement [[http://www.defectivebydesign.org/blog/670][spyware (just like Amazon's Unbox)]],
+      which can inform Amazon on what books you purchased; which you
+      are reading; what page you are on; which [[https://www.techdirt.com/articles/20100511/1018059377.shtml][words you've
+      highlighted]] or notes you've taken; and there's probably more
+      malicious "features" to come.  This is how malicious *DRM* can
+      truly be!
+
+    #+BEGIN_NOTES
+      - Before Amazon introduced it's *DRM*-encumbered media
+        streaming dis-service, /Amazon Prime/, there existed
+        another service known as [[http://www.neowin.net/news/psa-amazon-shuttering-unbox-on-march-29th-download-your-movies-now][Amazon Unbox]].
+      - Learn about [[http://boingboing.net/?s=unbox+eula][which freedoms users would lose with Unbox]][fn:3].
+    + The Amazon Kindle is the most malicious eBook reading device
+      ever devised.  [[http://www.nbcnews.com/technology/technolog/you-dont-own-your-kindle-books-amazon-reminds-customer-1C6626211][You do not own any copies of books]] purchased on
+      the Amazon Kindle, and since Amazon practices [[https://en.wikipedia.org/wiki/Vendor_lock-in][Vendor Lock-in]]:
+      Users can be sure that their *DRM*-encumbered content will
+      *NOT* be portable to other devices-- unless of course, your
+      alternate device is also infected with *DRM*; in which case,
+      Amazon /may/ authorize you to copy the file over.  Remember,
+      though, the file _you_ purchased belongs to them, not you--
+      you are just a "licensee" of that eBook, and Amazon can
+      remotely delete it whenever they want.
+    + The /Amazon Kindle Fire/ truly lives up to its name, because
+      Amazon can use the malware inside to commit massive digital
+      book burnings.  They've already remotely deleted-- without the
+      user's permission, of course-- hundreds of copies of /1984/
+      by George Orwell, [[http://mashable.com/2009/07/17/amazon-kindle-1984/][in an orwellian act]] (if any of you have
+      read the book).  George Orwell would turn in his grave if he
+      knew that the fiction he wrote-- about a subjugated, censored,
+      and surveilled society-- was actually non-fiction!
+    + These are the facts, and soon... Amazon's eBook readers may
+      start to behave like "smart" phones, by tracking you wherever
+      you go.  After reading all of this, you're probably thinking
+      that I've gone too far; however, I haven't gone far enough:
+      [[http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&Sect2=HITOFF&d=PALL&p=1&u=%2Fnetahtml%2FPTO%2Fsrchnum.htm&r=1&f=G&l=50&s1=8,073,460.PN.&OS=PN/8,073,460&RS=PN/8,073,460][Read this "mobile device travel patterns" patent]].  I know...
+      it's hard to read, but what it represents is the boiler plate
+      for spyware technology (you're "smart" phone uses the same type
+      of technology); every technology-- whether it's malicious or
+      not-- begins its life-cycle as a design first.  Most people
+      think that patents are designed to promote progress, but did
+      you know that they can also be used to threaten you?  Well, now
+      you know!
+    + All Proprietary Software companies subjugate their users by
+      providing them Nonfree Software, so Amazon isn't alone in their
+      quest for power over its users.  [[https://www.eff.org/pages/reader-privacy-chart-2012][Study this chart]], and learn
+      about other offenders that provide eBook readers which affect
+      your privacy by utilizing malware and/or restrictive policies.
+    + One more thing... knowing that Amazon has so much control over
+      Kindles, it only makes sense that users would want to take back
+      some of that control in order to make their devices adapt to
+      their needs.  People with the right technical know-how might be
+      able to accomplish such a feat by /rooting/ (some call it /jail
+      breaking/) their malicious devices, or by removing the *DRM*
+      inside thereby circumventing the malware and subjugation that
+      is imposed on all users.  Here's the problem, though: Kindles
+      still require Nonfree Software in order to function (i.e. the
+      firmware known as /Paperwhite/), and Amazon can use [[http://www.amazon.com/gp/help/customer/display.html?nodeId=200774090][the
+      universal backdoor]] in Kindles to remotely update them.  What
+      exactly does that mean?  It means that during the process of
+      "updating" a Kindle, Amazon will verify if the user is running
+      the authorized jailed-version of the device.  If their device
+      has been unlocked, [[https://www.techdirt.com/articles/20150321/13350230396/while-bricking-jailbroken-fire-tvs-last-year-amazon-did-same-to-kindle-devices.shtml][Amazon will brick it]]!  To brick a device,
+      means to render it non-functional.  In other words, the
+      functionality of a Kindle will have been reduced to nothing
+      more than a door-stopper if the user ever attempts to use it in
+      freedom.  In order for users to have the freedom to control
+      their Kindles, they must have the option to be able to install
+      *Free Software* on it; unfortunately, that option can't even be
+      provided until /Paperwhite/--firmware in Amazon's current
+      control-- is reverse-engineered and replaced with a free/libre
+      program that users *CAN* control.
+    #+END_NOTES
+*** =.mobi= (Mobipocket; is infected with *DRM*)
+    {{{img-url(http://www.ebook-drm-removal.com/media-voices-e-book-publishers-should-abandon-drm-technology-management/,Libraries Against DRM,Libraries Against DRM,http://c2.staticflickr.com/6/5133/5501648625_6738ee624a_z.jpg&f=1,30%)}}}
+    + Amazon also controls this format, and it uses a similar *DRM*
+      scheme as it's =.azw= counterpart.
+*** =.lit= (Microsoft[fn:4] Reader)
+    {{{img-url(https://technet.microsoft.com/it-it/sysinternals/cc838192%28v=vs.110%29.aspx,Controlling you is their specialty... hiding the fact that they do\, is not.,Controlling you is their specialty... hiding the fact that they do\, is not.,https://i-technet.sec.s-msft.com/it-it/sysinternals/Cc838192.DRM_FullConceptual(it-it\,VS.95).png,20%)}}}
+    {{{img-url(http://www.geek.com/games/microsoft-kills-safedisc-drm-on-windows-7-and-8-1634869/,Game Over!,Game Over!,http://www.geek.com/wp-content/uploads/2015/09/drm-625x350.jpg,40%)}}}
+    {{{img-url(http://wasduk.com/2013/12/18/microsoft-drm-very-sorry-over-its-actions-in-new-york/,Nonfree Software-- playing around with your freedom...,Nonfree Software-- playing around with your freedom...,http://69.195.124.152/~wasdukco/wp-content/uploads/2013/12/ki-lockdown.jpg,33%)}}} \\
+    + This format is also infected with *DRM*, just like everything
+      else that exists in Windows.  It's one thing for users to
+      give Microsoft control of their computers, but when they also
+      give the media industry (e.g. the [[http://www.defectivebydesign.org/topic/mpaa][MPAA]], [[http://www.defectivebydesign.org/topic/riaa][RIAA]], etc.) control of
+      their data... what exactly is left for users to control?
+
+    #+BEGIN_NOTES
+    If you are a Windows user, and you are confused by all of this:
+    [[https://gnu.org/proprietary/malware-microsoft.html][Study this list of malware discovered on Windows (i.e.
+    malicious functionality built into the core of Windows)]].
+    Microsoft prevents users from studying how programs work by
+    denying them software freedom (i.e. through the use of [[https://en.wikipedia.org/wiki/Non-disclosure_agreement][NDA's]],
+    [[https://en.wikipedia.org/wiki/Software_license_agreement][EULA's]], and various other /Proprietary Information Agreements/;
+    by withholding the source code; etc.), so the only way to
+    discover the malware is through observation and user reports.
+    If you've used Windows for a long time now, then you
+    shouldn't be surprised by all of this-- _you have experience_.
+    #+END_NOTES
+*** DRM?  What is Malicious Software?
+    - Callback Authentication (left) || Upfront Token Authentication (right) \\
+      [[http://d1g4b464qmnt1q.cloudfront.net/p/img/drmtoday-workflow-3.gif]]
+      http://d1g4b464qmnt1q.cloudfront.net/p/img/drmtoday-workflow-4.gif \\
+    - This is complicated!  Explain it in terms that /anyone/ can
+      understand? \\
+      #+BEGIN_HTML
+      <iframe src="https://archive.org/embed/drm-prevents-interoperability" width="640" height="350" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen>
+      </iframe>
+      #+END_HTML
+    #+BEGIN_NOTES
+    - I've mentioned that many of these formats impose *DRM* on the user.
+      Proponents of this malware will argue that it provides a "[[http://www.drmtoday.com/how-it-works][secure
+      reading system]]" due to its ability to encrypt files, so that no one
+      can make readable copies; however, the system is only secure if
+      *YOU* are the one who controls it!  If you have the keys to decrypt
+      the *DRM*-encumbered file, then _you are in control_ of the file.
+      If someone else has the keys to decrypt the *DRM*-encumbered
+      file-- such as a private company (e.g. [[http://www.defectivebydesign.org/amazontagging][Amazon]], [[http://www.defectivebydesign.org/apple][Apple]], [[http://www.defectivebydesign.org/microsoft][Microsoft]],
+      etc.), then _you are *NOT* in control_ of the file-- the owner of
+      the *DRM* program is; thus, the owner can use this nonfree program
+      as an instrument of unjust power over the user.
+      - Besides being in control of your data, maybe you would like to
+        make a digital copy of a media file for yourself to view on
+        another device?  Well... in order to do that: _*DRM* must be
+        removed!_
+      - I won't attempt to explain the irony behind the practice of
+        sharing unreadable, inaccessible files with users, and expecting
+        those users to somehow be able to read or access them-- [[https://archive.org/details/dbdoct3_adcbicycle][that's an
+        exercise for another day]].
+    - Here are examples of [[http://directory.fsf.org/wiki/Category/Hobbies/ebook-reader][eBook reading software that respects your
+      freedom]].  These programs are *Free Software*, so users are able to
+      control the program, and in turn, their reading experience-- a stark
+      contrast to the above nonfree programs or formats.
+    - Would you like to know more about *DRM*? Study these [[http://www.defectivebydesign.org/faq][Frequently Asked
+      Questions]]!
+      + I've also published an essay about *DRM*, how [[https://ia601701.us.archive.org/12/items/DRMAndFreeCulture/DrmAndFreeCulture.txt][it affects our
+        society (written by another ethical author)]], and what we should do
+        about it.  It's main focus is on *DRM* found in media streaming
+        dis-services, but the same concepts and principles can be applied
+        here.  The title of the essay, /What is the purpose of Genshiken/,
+        can just as easily be replaced with: /What is the purpose of using
+        Free Software and Free Formats/.  The essay is divided into three
+        parts:
+	1. http://www.nongnu.org/genshiken/#orgheadline1
+	2. http://www.nongnu.org/genshiken/#orgheadline2
+	3. http://www.nongnu.org/genshiken/#orgheadline3
+      + When I mention that *DRM* books are unreadable, what that means is
+        that the book is encrypted in such a way that it can only be read
+        using malware.  The malware is given the keys to decrypt the book
+        by the proprietor, so that you can read it.  Unfortunately, in the
+        proprietor's quest for power over you: They've decided not to give
+        you a copy of the key!  What does that mean?  It means that even
+        though you have a digital copy of the book, you are not able to
+        decrypt the file yourself-- which also means you can't make
+        readable copies to display on other devices you own.  Since *DRM*
+        takes away control of your own data, the /Free Software Movement/
+        considers it malware.  Imagine if your camera stored decades worth
+        of family pictures, and you wanted to share some of them on social
+        media: If the camera is infected with *DRM*, then you will not be
+        able to share your own files with your friends and family... this
+        is malware at its finest ([[https://archive.org/details/RedTouchMediaDigitalRightsManagementSystemInSaltLakeCity][some companies even advertise their
+        malware]])!
+      + *DRM* is also required in order to engage in [[http://www.moneycrashers.com/rent-borrow-ebooks-online/][eBook lending]], so
+        _don't be fooled_!  Ask yourself these questions: Does it make
+        sense to /borrow/ digital information?  Why can't libraries,
+        vendors, or purveyors simply send you a copy of the eBook, without
+        forcing you to give up control of your computing?  Why go through
+        the trouble of removing a copy of an eBook from the "owner", and
+        then copying the eBook to the "borrower"?  What stops the user
+        from making a copy of the eBook-- while it's in /their/ digital
+        library-- in the first place?  What kind of digital system exists
+        today that prevents people from making readable copies?  Does it
+        even make sense to make a book /unreadable/ when the main purpose
+        of acquiring a book is to *read* it?  Now that the "borrower" has a
+        copy of the eBook, they'll only be able to keep the eBook in
+        their library for only 14 days; after which, the proprietor that
+        controls the *DRM* in the device will delete it and send it back to
+        the "owner".  Does it make sense for someone besides you to delete
+        files on your device-- even if you are not the "owner" of the
+        file?  Does it make sense to even call something a "library" when
+        it can only store /disappearing/ books?  Malware is what makes this
+        all possible!  Share copies of your eBooks, but do not lend them,
+        for the only way to implement a lending system is through the use
+        of access restrictions controlled by _Digital Restrictions
+        Management_ (*DRM*)-- which is malware, no matter how convenient it
+        seems.  Lending books /physically/ doesn't require malware-- only
+        trust and cooperation.
+    - Wondering why I didn't list any eBook readers that *DO* respect
+      your freedom?  Well... I haven't listed any, because they don't
+      exist.  I can't list any right now, but hopefully in the future I'll
+      be able to.  Currently, the only way to read eBooks in freedom is
+      through [[http://www.gnu.org/philosophy/keep-control-of-your-computing.html][a computer that you have full control of]].  Can you [[https://www.gnu.org/philosophy/can-you-trust.html][trust your
+      PC]]?  Learn to say *NO* to [[https://www.fsf.org/campaigns/drm.html][*DRM* or Treacherous Computing]]!
+    #+END_NOTES
+*** TPM?  What is Malicious Hardware?
+    #+BEGIN_HTML
+    <iframe src="https://archive.org/embed/TrustedComputing" width="640" height="480" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen>
+    </iframe>
+    #+END_HTML
+    This particular subject goes beyond the scope of this eBook, but it
+    does have an impact on computing and is a /Technical Protection
+    Measure/-- just like *DRM* is.
+    
+* Are there any resources available for accessing books online?
+  Yes, but they are hard to come by since most books are copyrighted and
+  are either distributed with/without a license that restricts the user.
+
+  #+BEGIN_NOTES
+  The main nonfree restriction preventing users from copying and sharing
+  files, is a clause that says that the owner has exclusive rights to the
+  _use and distribution_ of the work; thus, the work is considered
+  /nonfree/, because only the owner can *freely* control what he/she does
+  with the work-- _not the users_.
+
+  Due to these problems, it is illegal in most circumstances to release a
+  free/libre version online that people can share-- nonfree technical
+  works, however, *CAN* be replaced fairly easily with a free/libre
+  version.  In essence, a book has to either respect your freedom from
+  the start by including a free/libre license under its Copyright page,
+  or it needs to be considered public domain material in order for users
+  to freely use and share it with each other.
+
+  *Project Gutenburg:* \\
+  - Beware of nonfree formats, like Kindle files!
+  - The /File Hosting Services/ provided on Project Gutenberg's
+    website use Nonfree Software, and the provider can delete your
+    files without your permission-- is there any loyalty when a
+    provider takes away control of your files, [[https://www.gnu.org/philosophy/who-does-that-server-really-serve.en.html][on their server]]? \\
+
+  *The Small Wars Journal:* \\
+  This is not the perfect example of *Free/Libre Access*, because of
+  the restriction  preventing commercial distribution; however, it's
+  still a great resource that you may distribute to others gratis.
+  Here's a quote from their website:
+
+      Small Wars Journal facilitates the exchange of information among
+      practitioners, thought leaders, and students of Small Wars, in order
+      to advance knowledge and capabilities in the field.  We hope this, in
+      turn, advances the practice and effectiveness of those forces
+      prosecuting Small Wars in the interest of self-determination,
+      freedom, and prosperity for the population in the area of operations.
+
+  + Want to learn more about /Small Wars/?
+    - [[http://www.au.af.mil/au/awc/awcgate/swm/index.htm][Small Wars Manual]]
+    - [[http://www.au.af.mil/au/awc/awcgate/navy/small_wars_manual_review.htm][A book review of the "Small Wars Manual", by the Naval War College]]
+  #+END_NOTES
+  + Here's a small compendium of resources providing *Free/Libre Access*
+    to online books, without requiring you to identify yourself (f.y.i.
+    I purposely left out resources that support /Open Access/, because I
+    believe that knowledge should be shared-- [[https://en.wikipedia.org/wiki/Gratis_vs_libre#Generalizing_the_.22gratis.2Flibre.22_distinction_to_the_open-access_movement][not just accessed]]):
+    - [[http://www.defectivebydesign.org/guide/ebooks][Guide to DRM-Free Living: Literature]] ::
+      This resource is provided by the [[https://www.fsf.org/about/what-is-free-software][FSF]]:
+      #+REVEAL: split
+      1. Crowdfunding, Community, & Self-Publishing Platforms
+         #+ATTR_REVEAL: :frag t
+         + [[https://en.wikibooks.org/wiki/Main_Page][Wikibooks]]  -- =Aimed at supplying educational textbooks.=
+         #+ATTR_REVEAL: :frag t
+         + [[https://en.wikisource.org/wiki/Main_Page][Wikisource]] -- =A collection of documentation (eBooks).=
+      2. Literary Archives & Libraries
+         #+ATTR_REVEAL: :frag t
+         + [[http://archive.org/details/texts][Internet Archive: Text]] -- =Free Books from a variety of
+           sources, most available as scanned PDFs and OCRed plain text.=
+           =More that 2,000,000 books available.=
+           - Stay away from the Lending system-- this requires malware
+             (Flash and *DRM*).
+         #+REVEAL: split
+         + [[http://www.gutenberg.org/][Project Gutenberg]]
+           #+HTML: <center>**</center>
+           #+LATEX: \begin{center}**\end{center}
+           #+BEGIN_QUOTE
+           The original purveyor of DRM-free eBooks.  The project aims to
+           encourage the creation and distribution of eBooks that will be
+           readable on any device you choose.  When you obtain an eBook,
+           you should not be locked into using one particular eBook
+           reader.  Instead, you should have the freedom to read that book
+           on any device. All of the material available through /Project
+           Gutenberg/ is free of charge, including the complete works of
+           William Shakespeare, Peter Pan, and the /United States
+           Declaration of Independence/.
+           #+END_QUOTE
+           #+HTML: <center>**</center>
+           #+LATEX: \begin{center}**\end{center}
+      #+REVEAL: split
+      3. Reference and educational materials
+         #+ATTR_REVEAL: :frag t
+         + [[http://linear.ups.edu/index.html][Linear Algebra, A first course]] -- =A free linear algebra
+           textbook available in PDF and released under the= [[https://www.gnu.org/licenses/fdl.html][GFDL]].
+         #+ATTR_REVEAL: :frag t
+	 + [[https://www.openstaxcollege.org/books][OpenStax College]] -- =is a nonprofit organization committed to
+           improving student access to quality learning materials. They=
+           =provide free textbooks, developed and peer-reviewed by
+           educators to ensure they are readable and accurate.=
+         #+ATTR_REVEAL: :frag t
+	 + [[https://en.wikiversity.org/wiki/Wikiversity:Main_Page][Wikiversity]]
+           #+HTML: <center>**</center>
+           #+LATEX: \begin{center}**\end{center}
+           #+BEGIN_QUOTE
+           A Wikimedia Foundation project devoted to learning resources,
+           learning projects, and research for use in all levels, types,
+           and styles of education from pre-school to university,
+           including professional training and informal learning. 
+           #+END_QUOTE
+           #+HTML: <center>**</center>
+           #+LATEX: \begin{center}**\end{center}
+    #+LATEX: \pagebreak
+    #+REVEAL: split
+    - _U.S. Marine Corps related_ ::
+      Below are Marine Corps related eBooks, documents, or articles that
+      are in the Public Domain-- each of which, provide publications in a
+      *Free/Libre Format*:
+      #+ATTR_REVEAL: :frag t
+      + [[http://www.marines.mil/News/Publications/ELECTRONICLIBRARY.aspx][Marine Corps Publications Electronic Library]]
+        Several types of publications organized by [[http://doni.daps.dla.mil/SECNAV%20Manuals1/5210.2%20(2012).pdf][SSIC]] are available via
+        *Free/Libre Access*, including Marine Corps Orders, Marine Corps
+        Bulletins, Directives, Historical Documents, etc.
+      #+ATTR_REVEAL: :frag t
+      + [[http://www.dtic.mil/doctrine/s_index.html][Joint Electronic Library]] ::
+        This resource is provided by the DoD, and is a small library which
+        includes a dictionary of military terms, journals explaining new
+        concepts and solutions, and Podcasts.
+      #+REVEAL: split
+      + [[http://www.darpa.mil/][Defense Advanced Research Projects Agency (DARPA)]] ::
+        The creators of the [[http://www.darpa.mil/about-us/timeline/arpanet][first network on the internet]]!  This website
+        contains lots of useful research, including several articles on
+        [[http://www.darpa.mil/tag-list?tt=9][CBRN]], Ground and Maritime technologies, [[http://www.darpa.mil/tag-list?tt=15][Cyberspace]], [[http://www.darpa.mil/tag-list?tt=26][Health]],
+        [[http://www.darpa.mil/tag-list?tt=47][Neuroscience]]... the list goes on and on.  Make sure to check out
+        their videos, too!
+      #+ATTR_REVEAL: :frag t
+      + [[https://www.mcu.usmc.mil/lleadership/Lists/Documents%20and%20Links%20Doctrine/AllItems.aspx][The Doctrines of Leadership]] ::
+	The /Lejeune Leadership Institute/ provides these =PDF= files for
+	improving ones leadership skills.
+      #+ATTR_REVEAL: :frag t
+      + [[https://www.mcu.usmc.mil/lleadership/Lists/Documents%20and%20Links%20Ethics/AllItems.aspx][The Doctrines of Ethics]] ::
+	The /Lejeune Leadership Institute/ provides these =PDF= files for
+	improving ones /espirit de corps/.
+      #+REVEAL: split
+      + [[http://www.ibiblio.org/hyperwar/USMC/index.html][U.S. Marine Corps in World War II]] ::
+	This resource provides a detailing account on the U.S. Marine Corps
+	Operations during /World War II/, and is woven together through
+        several HTML documents.  The website primarily consists of official
+        documents produced in the U.S. government.  /All/ documents
+        produced by the U.S. government are "born" in the public domain
+        (free of copyright restrictions).
+      #+REVEAL: split
+      + [[http://smallwarsjournal.com/][Small Wars Journal]] ::
+	This resource is run by the [[http://smallwarsjournal.com/content/foundation][Small Wars Foundation]] (a non-profit
+	corporation), and represents a culmination of several articles and
+	topics relating to the concepts and politics of /Small War/-- an
+	umbrella term which may include several other topics, such as:
+	- Urban Warfare
+	- Counter-Insurgency
+	- Peacemaking
+	- Peacekeeping
+	- Foreign internal defense
+	- Noncombatant evacuation
+	- Disaster relief
+	- Humanitarian assistance
+      #+REVEAL: split
+      + [[http://www.au.af.mil/au/awc/awcgate/awc-comm.htm#reading][The Air War College Gateway to the Internet - Reading]] ::
+        This resource is a perfect example of *Free/Libre Access*!
+        Provided are several resources for improving your reading and
+        communication skills.  The website provides several other useful
+        resources for military personnel in a variety of subjects.
+      #+ATTR_REVEAL: :frag t
+      + [[http://www.au.af.mil/au/aul/periodicals/dodelecj.htm][DOD Electronic Journals]] ::
+        This resource provides a variety of journals which is another good
+        example of *Free/Libre Access*!  Most require subscriptions, whilst
+        others provide RSS feeds.  Certain websites, however, are blocked
+        on =.mil= computers.
+* Is there anything else worth noting?
+  + *Free Software, Free Documentation*
+    #+ATTR_REVEAL: :frag t
+    - ftp://ftp.gnu.org (Official repository for the GNU system)
+    #+ATTR_REVEAL: :frag t
+    - ftp://alpha.gnu.org
+  + *Free eBooks, Document Search Engines*
+    #+ATTR_REVEAL: :frag t
+    - ftp://sailor.gutenberg.lib.md.us/gutenberg/ (some [[http://www.gutenberg.org/MIRRORS.ALL.utf8][more mirrors]])
+    #+ATTR_REVEAL: :frag t
+    - ftp://obi.std.com/obi (this is the /Open Book Initiative's/ repository)
+    #+ATTR_REVEAL: :frag t
+    - _gopher://floodgap.com/v2_ (Conduct indexed searching of online files
+                                  with /Veronica-2/)
+    #+ATTR_REVEAL: :frag t
+    - _gopher://gopherpedia.com_ (Gopher interface to /Wikipedia/)
+
+  #+REVEAL: split
+  #+BEGIN_NOTES
+  *FTP:* \\
+  Get *Free Software* and eBook files via [[https://en.wikipedia.org/wiki/File_Transfer_Protocol][FTP]]-- you'll need an FTP client
+  in order to access these remote directories, though.  There's also
+  /Gopher/, a distributed document search and retrieval protocol:
+
+  *RSS/NNTP:* \\
+  For *News*, aggregate Marine Corps worthy news via [[http://www.marines.mil/News/Feeds.aspx][RSS]].  There also
+  exists discussion groups on [[https://en.wikipedia.org/wiki/Usenet][Usenet]], which you can access via [[https://en.wikipedia.org/wiki/Network_News_Transfer_Protocol][NNTP]].
+  You'll need a news reader client that can connect to a news server.
+  Below are some text-only news servers, as well as some newsgroups that
+  you may find interesting:
+
+  *Postamble:* \\
+  If there are any books that exists on the /Commandant's Professional
+  Reading List/ whose Copyright has expired: Inform me immediately, so that
+  I can verify whether it can be transcribed or not!  For books that use
+  nonfree licensing and/or whose Copyrights have not expired, these will
+  have to be purchased or borrowed from libraries.  For those books, we
+  will start a lending program and reach out to the [[https://www.mca-marines.org/][Marine Corps
+  Association (MCA)]] if our libraries are missing them-- we won't be asking
+  for Kindles, though.
+
+  This is a working document and it is still under development!  If you
+  would like to contribute useful ideas or suggestions, then E-Mail them to
+  me so I can review it.  If your ideas abide by the principles set forth
+  in this book, and improves the professional reading program, chances are
+  I will include your contribution in the next version of this book!  This
+  eBook is self-published, and is located in the [[https://archive.org/details/the-principles-of-an-ethical-reading-program][Internet Archive]].  This
+  eBook abides by all of the principles set forth within; hopefully, future
+  eBooks will be the same! \\
+  #+END_NOTES
+  + *nntp.aioe.org*
+    #+ATTR_REVEAL: :frag t
+    - sci.military.naval
+    #+ATTR_REVEAL: :frag t
+    - rec.aviation.soaring
+    #+ATTR_REVEAL: :frag t
+    - rec.aviation.piloting
+    #+ATTR_REVEAL: :frag t
+    - rec.aviation.military
+    #+ATTR_REVEAL: :frag t
+  + *news.gmane.org*
+    #+ATTR_REVEAL: :frag t
+    - gwene.com.warontherocks
+    #+ATTR_REVEAL: :frag t
+    - gwene.com.antiwar.original
+    #+ATTR_REVEAL: :frag t
+    - gwene.com.feedburner.kings.of.war
+    #+ATTR_REVEAL: :frag t
+    - gwene.com.militarytimes.blogs.gearscout
+    #+ATTR_REVEAL: :frag t
+    - gwene.com.eetimes.military.and.aerospace
+    #+ATTR_REVEAL: :frag t
+    - gwene.com.feedburner.managing.leadership
+    #+ATTR_REVEAL: :frag t
+    - gmane.culture.literature.ebook-community
+  #+REVEAL: split
+  + A word about Copyright, in terms of eBooks... ::
+    #+ATTR_REVEAL: :frag t
+    - If all the words match... *You are a Pirate* (not really, though)
+    #+ATTR_REVEAL: :frag t
+    {{{img-url-2(Youtube Copyright School,Youtube Copyright School,http://sociable.co/wp-content/uploads/2011/04/youtube-copyright.png,40%,center)}}} \\
+    #+ATTR_REVEAL: :frag t
+    - If they don't...
+    #+ATTR_REVEAL: :frag t
+    {{{img-url-2(Motivational Poster,Motivational Poster,http://img1.ak.crunchyroll.com/i/spire4/4da515690733dd9c96eb5a914d8d7a761380670652_full.jpg,40%,center)}}}
+
+    #+BEGIN_NOTES
+    I'll will be expanding this section later on...
+    #+END_NOTES
+  #+REVEAL: split
+  {{{emphasize(yellow, red, Semper Fidelis!)}}}
+  #+LATEX: \vfill
+  #+LATEX: \begin{center}\textcolor{red}{\textbf{\hl{Semper Fidelis!}}}\end{center}
+  -----
+  #+BEGIN_QUOTE
+  + *Special thanks* goes to the fervent Marine Corps commanders who have
+    and continued to keep the professional reading program alive.
+  + *Special thanks* goes to the /Free Software Foundation/, for I would
+    not have been able to create this eBook without *Free Software*.
+  + *Special thanks* goes to the /Free Culture Foundation/, for they have
+    provided libre resources that I could reference in defining the
+    principles set forth in this eBook.
+  #+END_QUOTE
+* GNU Free Documentation License
+:PROPERTIES:
+:APPENDIX: t
+:END:
+#+BEGIN_CENTER
+                GNU Free Documentation License \\
+                 Version 1.3, 3 November 2008
+#+END_CENTER
+
+ Copyright (C) 2000, 2001, 2002, 2007, 2008 Free Software Foundation, Inc.
+     <http://fsf.org/>
+ Everyone is permitted to copy and distribute verbatim copies
+ of this license document, but changing it is not allowed. \\
+\\
+*0. PREAMBLE* \\
+
+The purpose of this License is to make a manual, textbook, or other
+functional and useful document "free" in the sense of freedom: to
+assure everyone the effective freedom to copy and redistribute it,
+with or without modifying it, either commercially or noncommercially.
+Secondarily, this License preserves for the author and publisher a way
+to get credit for their work, while not being considered responsible
+for modifications made by others.
+#+REVEAL: split
+This License is a kind of "copyleft", which means that derivative
+works of the document must themselves be free in the same sense.  It
+complements the GNU General Public License, which is a copyleft
+license designed for free software.
+
+We have designed this License in order to use it for manuals for free
+software, because free software needs free documentation: a free
+program should come with manuals providing the same freedoms that the
+software does.  But this License is not limited to software manuals;
+it can be used for any textual work, regardless of subject matter or
+whether it is published as a printed book.  We recommend this License
+principally for works whose purpose is instruction or reference. \\
+\\
+#+REVEAL: split
+*1. APPLICABILITY AND DEFINITIONS* \\
+
+This License applies to any manual or other work, in any medium, that
+contains a notice placed by the copyright holder saying it can be
+distributed under the terms of this License.  Such a notice grants a
+world-wide, royalty-free license, unlimited in duration, to use that
+work under the conditions stated herein.  The "Document", below,
+refers to any such manual or work.  Any member of the public is a
+licensee, and is addressed as "you".  You accept the license if you
+copy, modify or distribute the work in a way requiring permission
+under copyright law.
+#+REVEAL: split
+A "Modified Version" of the Document means any work containing the
+Document or a portion of it, either copied verbatim, or with
+modifications and/or translated into another language.
+
+A "Secondary Section" is a named appendix or a front-matter section of
+the Document that deals exclusively with the relationship of the
+publishers or authors of the Document to the Document's overall
+subject (or to related matters) and contains nothing that could fall
+directly within that overall subject.  (Thus, if the Document is in
+part a textbook of mathematics, a Secondary Section may not explain
+any mathematics.)  The relationship could be a matter of historical
+connection with the subject or with related matters, or of legal,
+commercial, philosophical, ethical or political position regarding
+them.
+#+REVEAL: split
+The "Invariant Sections" are certain Secondary Sections whose titles
+are designated, as being those of Invariant Sections, in the notice
+that says that the Document is released under this License.  If a
+section does not fit the above definition of Secondary then it is not
+allowed to be designated as Invariant.  The Document may contain zero
+Invariant Sections.  If the Document does not identify any Invariant
+Sections then there are none.
+
+The "Cover Texts" are certain short passages of text that are listed,
+as Front-Cover Texts or Back-Cover Texts, in the notice that says that
+the Document is released under this License.  A Front-Cover Text may
+be at most 5 words, and a Back-Cover Text may be at most 25 words.
+#+REVEAL: split
+A "Transparent" copy of the Document means a machine-readable copy,
+represented in a format whose specification is available to the
+general public, that is suitable for revising the document
+straightforwardly with generic text editors or (for images composed of
+pixels) generic paint programs or (for drawings) some widely available
+drawing editor, and that is suitable for input to text formatters or
+for automatic translation to a variety of formats suitable for input
+to text formatters.  A copy made in an otherwise Transparent file
+format whose markup, or absence of markup, has been arranged to thwart
+or discourage subsequent modification by readers is not Transparent.
+An image format is not Transparent if used for any substantial amount
+of text.  A copy that is not "Transparent" is called "Opaque".
+#+REVEAL: split
+Examples of suitable formats for Transparent copies include plain
+ASCII without markup, Texinfo input format, LaTeX input format, SGML
+or XML using a publicly available DTD, and standard-conforming simple
+HTML, PostScript or PDF designed for human modification.  Examples of
+transparent image formats include PNG, XCF and JPG.  Opaque formats
+include proprietary formats that can be read and edited only by
+proprietary word processors, SGML or XML for which the DTD and/or
+processing tools are not generally available, and the
+machine-generated HTML, PostScript or PDF produced by some word
+processors for output purposes only.
+
+The "Title Page" means, for a printed book, the title page itself,
+plus such following pages as are needed to hold, legibly, the material
+this License requires to appear in the title page.  For works in
+formats which do not have any title page as such, "Title Page" means
+the text near the most prominent appearance of the work's title,
+preceding the beginning of the body of the text.
+#+REVEAL: split
+The "publisher" means any person or entity that distributes copies of
+the Document to the public.
+
+A section "Entitled XYZ" means a named subunit of the Document whose
+title either is precisely XYZ or contains XYZ in parentheses following
+text that translates XYZ in another language.  (Here XYZ stands for a
+specific section name mentioned below, such as "Acknowledgements",
+"Dedications", "Endorsements", or "History".)  To "Preserve the Title"
+of such a section when you modify the Document means that it remains a
+section "Entitled XYZ" according to this definition.
+
+The Document may include Warranty Disclaimers next to the notice which
+states that this License applies to the Document.  These Warranty
+Disclaimers are considered to be included by reference in this
+License, but only as regards disclaiming warranties: any other
+implication that these Warranty Disclaimers may have is void and has
+no effect on the meaning of this License. \\
+\\
+#+REVEAL: split
+*2. VERBATIM COPYING* \\
+
+You may copy and distribute the Document in any medium, either
+commercially or noncommercially, provided that this License, the
+copyright notices, and the license notice saying this License applies
+to the Document are reproduced in all copies, and that you add no
+other conditions whatsoever to those of this License.  You may not use
+technical measures to obstruct or control the reading or further
+copying of the copies you make or distribute.  However, you may accept
+compensation in exchange for copies.  If you distribute a large enough
+number of copies you must also follow the conditions in section 3.
+
+You may also lend copies, under the same conditions stated above, and
+you may publicly display copies.\\
+\\
+#+REVEAL: split
+*3. COPYING IN QUANTITY* \\
+
+If you publish printed copies (or copies in media that commonly have
+printed covers) of the Document, numbering more than 100, and the
+Document's license notice requires Cover Texts, you must enclose the
+copies in covers that carry, clearly and legibly, all these Cover
+Texts: Front-Cover Texts on the front cover, and Back-Cover Texts on
+the back cover.  Both covers must also clearly and legibly identify
+you as the publisher of these copies.  The front cover must present
+the full title with all words of the title equally prominent and
+visible.  You may add other material on the covers in addition.
+Copying with changes limited to the covers, as long as they preserve
+the title of the Document and satisfy these conditions, can be treated
+as verbatim copying in other respects.
+#+REVEAL: split
+If the required texts for either cover are too voluminous to fit
+legibly, you should put the first ones listed (as many as fit
+reasonably) on the actual cover, and continue the rest onto adjacent
+pages.
+
+If you publish or distribute Opaque copies of the Document numbering
+more than 100, you must either include a machine-readable Transparent
+copy along with each Opaque copy, or state in or with each Opaque copy
+a computer-network location from which the general network-using
+public has access to download using public-standard network protocols
+a complete Transparent copy of the Document, free of added material.
+If you use the latter option, you must take reasonably prudent steps,
+when you begin distribution of Opaque copies in quantity, to ensure
+that this Transparent copy will remain thus accessible at the stated
+location until at least one year after the last time you distribute an
+Opaque copy (directly or through your agents or retailers) of that
+edition to the public.
+#+REVEAL: split
+It is requested, but not required, that you contact the authors of the
+Document well before redistributing any large number of copies, to
+give them a chance to provide you with an updated version of the
+Document. \\
+\\
+#+REVEAL: split
+*4. MODIFICATIONS* \\
+
+You may copy and distribute a Modified Version of the Document under
+the conditions of sections 2 and 3 above, provided that you release
+the Modified Version under precisely this License, with the Modified
+Version filling the role of the Document, thus licensing distribution
+and modification of the Modified Version to whoever possesses a copy
+of it.  In addition, you must do these things in the Modified Version:
+
+A. Use in the Title Page (and on the covers, if any) a title distinct
+   from that of the Document, and from those of previous versions
+   (which should, if there were any, be listed in the History section
+   of the Document).  You may use the same title as a previous version
+   if the original publisher of that version gives permission.
+#+REVEAL: split
+B. List on the Title Page, as authors, one or more persons or entities
+   responsible for authorship of the modifications in the Modified
+   Version, together with at least five of the principal authors of the
+   Document (all of its principal authors, if it has fewer than five),
+   unless they release you from this requirement.
+C. State on the Title page the name of the publisher of the
+   Modified Version, as the publisher.
+D. Preserve all the copyright notices of the Document.
+E. Add an appropriate copyright notice for your modifications
+   adjacent to the other copyright notices.
+F. Include, immediately after the copyright notices, a license notice
+   giving the public permission to use the Modified Version under the
+   terms of this License, in the form shown in the Addendum below.
+G. Preserve in that license notice the full lists of Invariant Sections
+   and required Cover Texts given in the Document's license notice.
+H. Include an unaltered copy of this License.
+#+REVEAL: split
+I. Preserve the section Entitled "History", Preserve its Title, and add
+   to it an item stating at least the title, year, new authors, and
+   publisher of the Modified Version as given on the Title Page.  If
+   there is no section Entitled "History" in the Document, create one
+   stating the title, year, authors, and publisher of the Document as
+   given on its Title Page, then add an item describing the Modified
+   Version as stated in the previous sentence.
+J. Preserve the network location, if any, given in the Document for
+   public access to a Transparent copy of the Document, and likewise
+   the network locations given in the Document for previous versions
+   it was based on.  These may be placed in the "History" section.
+   You may omit a network location for a work that was published at
+   least four years before the Document itself, or if the original
+   publisher of the version it refers to gives permission.
+#+REVEAL: split
+K. For any section Entitled "Acknowledgements" or "Dedications",
+   Preserve the Title of the section, and preserve in the section all
+   the substance and tone of each of the contributor acknowledgements
+   and/or dedications given therein.
+L. Preserve all the Invariant Sections of the Document,
+   unaltered in their text and in their titles.  Section numbers
+   or the equivalent are not considered part of the section titles.
+M. Delete any section Entitled "Endorsements".  Such a section
+   may not be included in the Modified Version.
+N. Do not retitle any existing section to be Entitled "Endorsements"
+   or to conflict in title with any Invariant Section.
+O. Preserve any Warranty Disclaimers.
+#+REVEAL: split
+If the Modified Version includes new front-matter sections or
+appendices that qualify as Secondary Sections and contain no material
+copied from the Document, you may at your option designate some or all
+of these sections as invariant.  To do this, add their titles to the
+list of Invariant Sections in the Modified Version's license notice.
+These titles must be distinct from any other section titles.
+
+You may add a section Entitled "Endorsements", provided it contains
+nothing but endorsements of your Modified Version by various
+parties--for example, statements of peer review or that the text has
+been approved by an organization as the authoritative definition of a
+standard.
+#+REVEAL: split
+You may add a passage of up to five words as a Front-Cover Text, and a
+passage of up to 25 words as a Back-Cover Text, to the end of the list
+of Cover Texts in the Modified Version.  Only one passage of
+Front-Cover Text and one of Back-Cover Text may be added by (or
+through arrangements made by) any one entity.  If the Document already
+includes a cover text for the same cover, previously added by you or
+by arrangement made by the same entity you are acting on behalf of,
+you may not add another; but you may replace the old one, on explicit
+permission from the previous publisher that added the old one.
+
+The author(s) and publisher(s) of the Document do not by this License
+give permission to use their names for publicity for or to assert or
+imply endorsement of any Modified Version. \\
+\\
+#+REVEAL: split
+*5. COMBINING DOCUMENTS* \\
+
+You may combine the Document with other documents released under this
+License, under the terms defined in section 4 above for modified
+versions, provided that you include in the combination all of the
+Invariant Sections of all of the original documents, unmodified, and
+list them all as Invariant Sections of your combined work in its
+license notice, and that you preserve all their Warranty Disclaimers.
+
+The combined work need only contain one copy of this License, and
+multiple identical Invariant Sections may be replaced with a single
+copy.  If there are multiple Invariant Sections with the same name but
+different contents, make the title of each such section unique by
+adding at the end of it, in parentheses, the name of the original
+author or publisher of that section if known, or else a unique number.
+Make the same adjustment to the section titles in the list of
+Invariant Sections in the license notice of the combined work.
+#+REVEAL: split
+In the combination, you must combine any sections Entitled "History"
+in the various original documents, forming one section Entitled
+"History"; likewise combine any sections Entitled "Acknowledgements",
+and any sections Entitled "Dedications".  You must delete all sections
+Entitled "Endorsements". \\
+\\
+#+REVEAL: split
+*6. COLLECTIONS OF DOCUMENTS* \\
+
+You may make a collection consisting of the Document and other
+documents released under this License, and replace the individual
+copies of this License in the various documents with a single copy
+that is included in the collection, provided that you follow the rules
+of this License for verbatim copying of each of the documents in all
+other respects.
+
+You may extract a single document from such a collection, and
+distribute it individually under this License, provided you insert a
+copy of this License into the extracted document, and follow this
+License in all other respects regarding verbatim copying of that
+document. \\
+\\
+#+REVEAL: split
+*7. AGGREGATION WITH INDEPENDENT WORKS* \\
+
+A compilation of the Document or its derivatives with other separate
+and independent documents or works, in or on a volume of a storage or
+distribution medium, is called an "aggregate" if the copyright
+resulting from the compilation is not used to limit the legal rights
+of the compilation's users beyond what the individual works permit.
+When the Document is included in an aggregate, this License does not
+apply to the other works in the aggregate which are not themselves
+derivative works of the Document.
+
+If the Cover Text requirement of section 3 is applicable to these
+copies of the Document, then if the Document is less than one half of
+the entire aggregate, the Document's Cover Texts may be placed on
+covers that bracket the Document within the aggregate, or the
+electronic equivalent of covers if the Document is in electronic form.
+Otherwise they must appear on printed covers that bracket the whole
+aggregate. \\
+\\
+#+REVEAL: split
+*8. TRANSLATION* \\
+
+Translation is considered a kind of modification, so you may
+distribute translations of the Document under the terms of section 4.
+Replacing Invariant Sections with translations requires special
+permission from their copyright holders, but you may include
+translations of some or all Invariant Sections in addition to the
+original versions of these Invariant Sections.  You may include a
+translation of this License, and all the license notices in the
+Document, and any Warranty Disclaimers, provided that you also include
+the original English version of this License and the original versions
+of those notices and disclaimers.  In case of a disagreement between
+the translation and the original version of this License or a notice
+or disclaimer, the original version will prevail.
+
+If a section in the Document is Entitled "Acknowledgements",
+"Dedications", or "History", the requirement (section 4) to Preserve
+its Title (section 1) will typically require changing the actual
+title. \\
+\\
+#+REVEAL: split
+*9. TERMINATION* \\
+
+You may not copy, modify, sublicense, or distribute the Document
+except as expressly provided under this License.  Any attempt
+otherwise to copy, modify, sublicense, or distribute it is void, and
+will automatically terminate your rights under this License.
+
+However, if you cease all violation of this License, then your license
+from a particular copyright holder is reinstated (a) provisionally,
+unless and until the copyright holder explicitly and finally
+terminates your license, and (b) permanently, if the copyright holder
+fails to notify you of the violation by some reasonable means prior to
+60 days after the cessation.
+#+REVEAL: split
+Moreover, your license from a particular copyright holder is
+reinstated permanently if the copyright holder notifies you of the
+violation by some reasonable means, this is the first time you have
+received notice of violation of this License (for any work) from that
+copyright holder, and you cure the violation prior to 30 days after
+your receipt of the notice.
+
+Termination of your rights under this section does not terminate the
+licenses of parties who have received copies or rights from you under
+this License.  If your rights have been terminated and not permanently
+reinstated, receipt of a copy of some or all of the same material does
+not give you any rights to use it. \\
+\\
+#+REVEAL: split
+*10. FUTURE REVISIONS OF THIS LICENSE* \\
+
+The Free Software Foundation may publish new, revised versions of the
+GNU Free Documentation License from time to time.  Such new versions
+will be similar in spirit to the present version, but may differ in
+detail to address new problems or concerns.  See
+http://www.gnu.org/copyleft/.
+
+Each version of the License is given a distinguishing version number.
+If the Document specifies that a particular numbered version of this
+License "or any later version" applies to it, you have the option of
+following the terms and conditions either of that specified version or
+of any later version that has been published (not as a draft) by the
+Free Software Foundation.  If the Document does not specify a version
+number of this License, you may choose any version ever published (not
+as a draft) by the Free Software Foundation.  If the Document
+specifies that a proxy can decide which future versions of this
+License can be used, that proxy's public statement of acceptance of a
+version permanently authorizes you to choose that version for the
+Document. \\
+\\
+#+REVEAL: split
+*11. RELICENSING* \\
+
+"Massive Multiauthor Collaboration Site" (or "MMC Site") means any
+World Wide Web server that publishes copyrightable works and also
+provides prominent facilities for anybody to edit those works.  A
+public wiki that anybody can edit is an example of such a server.  A
+"Massive Multiauthor Collaboration" (or "MMC") contained in the site
+means any set of copyrightable works thus published on the MMC site.
+
+"CC-BY-SA" means the Creative Commons Attribution-Share Alike 3.0 
+license published by Creative Commons Corporation, a not-for-profit 
+corporation with a principal place of business in San Francisco, 
+California, as well as future copyleft versions of that license 
+published by that same organization.
+#+REVEAL: split
+"Incorporate" means to publish or republish a Document, in whole or in 
+part, as part of another Document.
+
+An MMC is "eligible for relicensing" if it is licensed under this 
+License, and if all works that were first published under this License 
+somewhere other than this MMC, and subsequently incorporated in whole or 
+in part into the MMC, (1) had no cover texts or invariant sections, and 
+(2) were thus incorporated prior to November 1, 2008.
+
+The operator of an MMC Site may republish an MMC contained in the site
+under CC-BY-SA on the same site at any time before August 1, 2009,
+provided the MMC is eligible for relicensing. \\
+\\
+#+REVEAL: split
+_*ADDENDUM: How to use this License for your documents*_ \\
+
+To use this License in a document you have written, include a copy of
+the License in the document and put the following copyright and
+license notices just after the title page:
+
+    Copyright (c)  YEAR  YOUR NAME.
+    Permission is granted to copy, distribute and/or modify this document
+    under the terms of the GNU Free Documentation License, Version 1.3
+    or any later version published by the Free Software Foundation;
+    with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
+    A copy of the license is included in the section entitled "GNU
+    Free Documentation License".
+#+REVEAL: split
+If you have Invariant Sections, Front-Cover Texts and Back-Cover Texts,
+replace the "with...Texts." line with this:
+
+    with the Invariant Sections being LIST THEIR TITLES, with the
+    Front-Cover Texts being LIST, and with the Back-Cover Texts being LIST.
+
+If you have Invariant Sections without Cover Texts, or some other
+combination of the three, merge those two alternatives to suit the
+situation.
+
+If your document contains nontrivial examples of program code, we
+recommend releasing these examples in parallel under your choice of
+free software license, such as the GNU General Public License,
+to permit their use in free software.
+
+#+LATEX: \vfill
+#+LATEX: \begin{center}***\end{center}
+* Footnotes
+
+[fn:4] Microsoft is not the only one that subjugates users; Apple, Amazon,
+Netflix, and several others do as well.  Microsoft simply makes for the
+best example, since they are the most successful company in the world when
+it comes to *user subjugation*.  Fortunately, it is not as if there is no
+where for users to turn if they want to escape to freedom.  [[https://www.fsf.org/windows][An upgrade]] is
+available for users who feel that they are ready to have control of their
+computing.
+
+[fn:3] [[https://web.archive.org/web/20100324201825/http://www.stoweboyd.com/message/2009/7/19/kindle-license-agreement-annotated.html][Amazon's unethical terms]], allowed for spyware to exist in Unbox.
+*DRM* was not implemented at the time, though... could /Amazon Prime/ be a
+more malicious replacement for /Amazon Unbox/, with *DRM* inside?  Several
+users have [[http://www.amazon.com/forum/amazon%20prime?cdForum=Fx19TKUDUCVHDNP&cdThread=Tx19HPH8H35E889][already answered this question via experience]].  Poor
+interoperability is only one consequence of malware, like *DRM*-- I can
+cite several other consequences, but that would distract you from the main
+point: Amazon's /black box/ technology (i.e. a technology whose
+inner-workings are censored) is nonfree; thus, you can't control it!
+
+[fn:2] American Standard Code for Information Interchange.  *Allin
+Cottrell:* =ASCII is the lowest common denominator of textual communication
+in digital form. An ASCII message will be understandable by any computer=
+=in the world. If you send such a message, you can be sure that the=
+=recipient will see precisely what you typed.=
+
+[fn:1] It's important to note that I use the word *free* a lot.  Most
+people don't realize, though, that there exists a bug in the English
+language-- the different meanings of the word *free*.  Whenever I say that
+something costs nothing or is devoid of price, I don't say that it's free--
+I say that it's gratis.  Whenever I say that you are able to use that
+something however you wish-- this is when I define it as *free*, or [[http://wikieducator.org/Say_Libre][libre]].
+When it comes to eBooks, it is important to denote whether the eBook is
+either free as in [[http://www.gutenberg.org/wiki/Gutenberg:No_Cost_or_Freedom%3F][no cost or freedom]].  In the case of this eBook, it is
+both free and gratis (the official distribution is gratis, but others may
+sell it at a price if they wish; the book is *free*, after all... if you
+were confused by that, then you are aware of the bug).
+
