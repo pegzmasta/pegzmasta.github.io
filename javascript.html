@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>The Principles of an Ethical Reading Program</title>
+<meta name="author" content="(Michael Pagan)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="./reveal.js/css/reveal.css"/>
+<link rel="stylesheet" href="./reveal.js/css/theme/moon.css" id="theme"/>
+<link rel="stylesheet" href="./local.css"/>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = './reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+<meta name="description" content="Org-Reveal Introduction.">
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide">
+<h1>The Principles of an Ethical Reading Program</h1>
+<h2>Michael Pagan</h2>
+<h2><a href="mailto:mailto:michael.pagan@member.fsf.org">mailto:michael.pagan@member.fsf.org</a></h2>
+<h2>February 29, 2016</h2>
+</section>
+<section id="table-of-contents">
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#/slide-orgheadline1">Javascript license information</a></li>
+</ul>
+</div>
+</div>
+</section>
+<script>
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function rpl(expr,a,b)
+ {
+   var i=0
+   while (i!=-1)
+   {
+      i=expr.indexOf(a,i);
+      if (i>=0)
+      {
+         expr=expr.substring(0,i)+b+expr.substring(i+a.length);
+         i+=b.length;
+      }
+   }
+   return expr
+ }
+ function show_org_source()
+ {
+   document.location.href = rpl(document.location.href,"html","org.html");
+ }
+ /*]]>*///-->
+</script>
+<style>
+  .copy-left {
+     display: inline-block;
+     text-align: right;
+     margin: 0;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+  }
+</style>
+
+<section>
+<section id="slide-orgheadline1">
+<h2 id="orgheadline1">Javascript license information</h2>
+<table id="jslicense-labels1" border="2" cellspacing="0" cellpadding="6" rules="all" frame="border">
+<caption class="t-above"><span class="table-number">Table 1:</span> The below files help run this website</caption>
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Script</th>
+<th scope="col" class="org-left">License</th>
+<th scope="col" class="org-left">Source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><a href="https://raw.githubusercontent.com/pegzmasta/pegzmasta.github.io/master/reveal.js/lib/js/head.min.js">head.min.js</a></td>
+<td class="org-left"><a href="https://github.com/pegzmasta/pegzmasta.github.io/blob/master/reveal.js/LICENSE">Expat</a></td>
+<td class="org-left"><a href="https://raw.githubusercontent.com/headjs/headjs/master/dist/1.0.0/head.js">head.js</a></td>
+</tr>
+
+<tr>
+<td class="org-left"><a href="https://raw.githubusercontent.com/pegzmasta/pegzmasta.github.io/master/reveal.js/plugin/notes/notes.js">notes.js</a></td>
+<td class="org-left"><a href="https://github.com/pegzmasta/pegzmasta.github.io/blob/master/reveal.js/LICENSE">Expat</a></td>
+<td class="org-left"><a href="https://raw.githubusercontent.com/pegzmasta/pegzmasta.github.io/master/reveal.js/plugin/notes/notes.js">notes.js</a></td>
+</tr>
+
+<tr>
+<td class="org-left"><a href="https://raw.githubusercontent.com/pegzmasta/pegzmasta.github.io/master/reveal.js/js/reveal.js">reveal.js</a></td>
+<td class="org-left"><a href="https://github.com/pegzmasta/pegzmasta.github.io/blob/master/reveal.js/LICENSE">Expat</a></td>
+<td class="org-left"><a href="https://raw.githubusercontent.com/pegzmasta/pegzmasta.github.io/master/reveal.js/js/reveal.js">reveal.js</a></td>
+</tr>
+</tbody>
+</table>
+
+<p>
+<b><center><div style="background-color: Blue;">Copyleft <span class="copy-left">&copy;</span><span> 2015-2016 Michael Pagan</span></div></center></b>
+</p>
+</section>
+</section>
+</div>
+</div>
+<p> Created by yjwen. </p>
+<script src="./reveal.js/lib/js/head.min.js"></script>
+<script src="./reveal.js/js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: 'c',
+rollingLinks: true,
+keyboard: true,
+overview: true,
+width: 1200,
+height: 800,
+margin: 0.10,
+minScale: 0.50,
+maxScale: 2.50,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'cube', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: './reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: './reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: './reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
+</script>
+</body>
+</html>

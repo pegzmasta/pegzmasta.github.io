@@ -20,7 +20,8 @@
 #+MACRO: creator   [[http://www.gnu.org/software/emacs/][Emacs]] 24.5.1 ([[http://orgmode.org/][Org]] mode 8.3.2)
 #+MACRO: updated   {{{time(%B)}}} {{{time(%d)}}}, {{{time(%Y)}}} at {{{time(%T)}}}
 #+MACRO: version   Version 0.1-- last updated on {{{updated}}}
-#+MACRO: img-url   @@html:<a href="$1" title="$2" target="_blank"><img alt="$3" src="$4" width="$5" /></a>@@
+#+MACRO: txt-url   @@html:<a href="$1" $2>$3</a>@@
+#+MACRO: img-url   @@html:<a href="$1" title="$2" target="_blank" $3><img alt="$4" src="$5" width="$6" /></a>@@
 #+MACRO: img-url-2 @@html:<img alt="$1" title="$2" src="$3" width="$4" align="$5" /></a>@@
 #+MACRO: emphasize @@html:<b><center><div style="background-color: $1; color: $2;">$3</div></center></b>@@
 
@@ -42,14 +43,68 @@
 #+STARTUP:  showeverything
 #+LANGUAGE: en
 
-{{{img-url(http://freedomdefined.org/Licenses/GNU_FDL_1.2,GNU Free Documentation License (Human Readable),GNU Free Documentation License (Human Readable),http://www.nongnu.org/genshiken/img/GFDL-Button.png,4%)}}}
-{{{img-url(http://www.kopimi.com/index.html,Kopimi,Kopimi,http://www.nongnu.org/genshiken/img/american-kopimi.png,9%)}}}
-{{{img-url(http://wikieducator.org/Libre/Knowledge,Libre Knowledge,Libre Knowledge,https://upload.wikimedia.org/wikipedia/commons/5/52/Libre_Knowledge_Culture_Society_%28PNG%29.png,5%)}}}
+#+COMMENT: Required in order to operate the "Show Org source" button on the Project Homepage
+#+BEGIN_HTML
+<script>
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function show_org_source()
+ {
+   document.location.pathname += "index.org.html";
+ }
+/*]]>*///-->
+</script>
+#+END_HTML
+#+COMMENT: Copied from <https://gist.github.com/JGallardo/6077195>
+#+BEGIN_HTML
+<style>
+  .copy-left {
+     display: inline-block;
+     text-align: right;
+     margin: 0;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+  }
+</style>
+#+END_HTML
+
+{{{img-url(http://freedomdefined.org/Licenses/GNU_FDL_1.2,GNU Free Documentation License (Human Readable),,GNU Free Documentation License (Human Readable),http://www.nongnu.org/genshiken/img/GFDL-Button.png,4%)}}}
+{{{img-url(http://www.kopimi.com/index.html,Kopimi,Kopimi,,http://www.nongnu.org/genshiken/img/american-kopimi.png,9%)}}}
+{{{img-url(http://wikieducator.org/Libre/Knowledge,Libre Knowledge,,Libre Knowledge,https://upload.wikimedia.org/wikipedia/commons/5/52/Libre_Knowledge_Culture_Society_%28PNG%29.png,5%)}}}
+{{{img-url(/javascript.html,JavaScript License Information,rel="jslicense",JavaScript License Information,http://www.b2bweb.fr/wp-content/uploads/js-logo-badge-128.png,5%)}}}
+
 #+TOC: headlines 1
 * Let's kick off: The start of the Professional Reading Program!
   #+LATEX: \begin{center}\textcolor{red}{\textbf{\hl{Oorah, Marines!}}}\end{center}
   #+ATTR_REVEAL: :frag t
-  {{{img-url-2(Demotivational Poster,Demotivational Poster,http://www.thelinemedia.com/galleries/Features/issue_158/800px-little_free_library\,_easthampton_ma.jpg,30%,left)}}}
+  {{{img-url-2(Motivational Poster,Motivational Poster,http://www.thelinemedia.com/galleries/Features/issue_158/800px-little_free_library\,_easthampton_ma.jpg,25%,left)}}}
   #+ATTR_REVEAL: :frag t
   *Fantasy: (Metropolis)* \\
   You ask the Librarian to sign out some books. \\
@@ -58,7 +113,7 @@
   \\
   \\
   #+ATTR_REVEAL: :frag t
-  {{{img-url-2(Demotivational Poster,Demotivational Poster,http://s3.zerochan.net/Demotivational.Poster.240.362061.jpg,30%,left)}}}
+  {{{img-url-2(Demotivational Poster,Demotivational Poster,http://s3.zerochan.net/Demotivational.Poster.240.362061.jpg,25%,left)}}}
   #+ATTR_REVEAL: :frag t
   *Reality: (Gotham City)* \\
   You ask the Librarian to sign out some books. \\
