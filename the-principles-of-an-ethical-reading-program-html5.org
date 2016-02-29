@@ -96,7 +96,7 @@
   universally implemented format (e.g. OpenDocument format, PDF, etc)]]
   #+END_NOTES
 *** Let's Read-- What does freedom have to do with reading?
-  {{{img-url(http://www.ala.org/advocacy/intfreedom/statementspols/freedomreadstatement,The Right to Read,The Right to Read,/img/freadom.jpg,)}}} \\
+  {{{img-url(http://www.ala.org/advocacy/intfreedom/statementspols/freedomreadstatement,The Right to Read,,The Right to Read,/img/freadom.jpg,)}}} \\
   While there are [[https://www.fsf.org/bulletin/2011/spring/the-danger-of-ebooks][several reasons to reject nonfree eBook formats]]...
   [[http://www.defectivebydesign.org/kindle-fire][several]], the main reason is to promote accessibility between all users,
   and to encourage [[http://www.gnu.org/philosophy/right-to-read.html][the Right to Read]].
@@ -125,7 +125,7 @@
   longer be required.
   #+END_NOTES
 *** Let's Read-- Encryption is for private messages, not public ones!
-    {{{img-url(http://www.gutenberg.org/ebooks/17195,A Message to Garcia,A Message to Garcia,/img/pg17195.cover.medium.jpg,20%)}}} \\
+    {{{img-url(http://www.gutenberg.org/ebooks/17195,A Message to Garcia,,A Message to Garcia,/img/pg17195.cover.medium.jpg,20%)}}} \\
 
     If defective digital technologies did not exist, then /anyone/ would be
     able to read /A Message to Garcia/.  Does it make sense to add a
@@ -263,7 +263,7 @@
     all authors, purveyors, vendors, and libraries will follow suit-- they
     should be applied to eBooks and printed books alike:
 *** How should authors create an eBook?
-    #+COMMENT: {{{img-url(http://www.gnu.org/,Free Software\, Free Society,Free Software\, Free Society,http://www.gnu.org/graphics/meditate.svg,30%)}}} \\
+    #+COMMENT: {{{img-url(http://www.gnu.org/,Free Software\, Free Society,Free Software\,, Free Society,http://www.gnu.org/graphics/meditate.svg,30%)}}} \\
 
     #+BEGIN_COMMENT
     I can't figure out how this code works...
@@ -398,7 +398,7 @@
        File Formats]].
     #+END_NOTES
 *** Which license should an author apply to an eBook?
-    {{{img-url(http://freedomdefined.org/Licenses,Free Culture,Free Culture,/img/license_icon.svg,25%)}}} \\
+    {{{img-url(http://freedomdefined.org/Licenses,Free Culture,,Free Culture,/img/license_icon.svg,25%)}}} \\
     *Free/Libre License* \\
 
     #+BEGIN_QUOTE
@@ -434,7 +434,7 @@
     universities]]).
     #+END_NOTES
 *** How should authors save or encode an eBook file?
-    {{{img-url(http://en.wikipedia.org/wiki/Free_file_format,readily articulated\, codified\, accessed and verbalized,readily articulated\, codified\, accessed and verbalized,/img/document_freedom_day.png,30%)}}} \\
+    {{{img-url(http://en.wikipedia.org/wiki/Free_file_format,readily articulated\, codified\, accessed and verbalized,,readily articulated\, codified\, accessed and verbalized,/img/document_freedom_day.png,30%)}}} \\
     *Free/Libre Format* \\
     - Document Freedom adresses much more than just essays and spreadsheets,
       it is about control of any kind of a digital data - including artwork,
@@ -484,7 +484,7 @@
     would normally have when reading a printed book.
     #+END_NOTES
 *** Which channels should publishers distribute or upload an eBook file to?
-    {{{img-url(http://wikieducator.org/Main_Page,WikiEducator,WikiEducator,/img/WikiEd.jpg,30%)}}} \\
+    {{{img-url(http://wikieducator.org/Main_Page,WikiEducator,,WikiEducator,/img/WikiEd.jpg,30%)}}} \\
     *Free/Libre Access* \\
 
     - What rules would best ensure the maximum dissemination of scientific
@@ -546,7 +546,7 @@
     (without [[http://drm.info/][DRM]]), and plain ASCII[fn:2] text files.
     - _That does *NOT* include [[http://www.computerweekly.com/opinion/Beware-proprietary-data-formats][nonfree formats]], such as:_
 *** =.rtf= (Microsoft's Rich Text Format)
-    {{{img-url(http://repositorium.googlecode.com/svn/trunk/RtfConverter/Word2007RTFSpec9.pdf,RTF Specification,RTF Specification,/img/rtf-mode-examples.png,50%)}}} \\
+    {{{img-url(http://repositorium.googlecode.com/svn/trunk/RtfConverter/Word2007RTFSpec9.pdf,RTF Specification,,RTF Specification,/img/rtf-mode-examples.png,50%)}}} \\
     + This is a nonfree format; fortunately, Microsoft has published
       specifications for how it works.  Unfortunately, there are
       several different versions of this format, since it hasn't been
@@ -620,7 +620,7 @@
       HTML with [[http://directory.fsf.org/wiki/RTF_to_HTML][RTF to HTML]].
       #+END_NOTES
 *** =.doc= / =.docx= (Microsoft Word)
-    {{{img-url(http://www.gnu.org/philosophy/no-word-attachments.html,How it works is a secret...,How it works is a secret...,/img/confidential.png,50%)}}} \\
+    {{{img-url(http://www.gnu.org/philosophy/no-word-attachments.html,How it works is a secret...,,How it works is a secret...,/img/confidential.png,50%)}}} \\
     + This format is based on OOXML (i.e. a patented format; XML,
       in contrast, is an /Open Standard/); not only that, but Word
       also utilizes formatting codes, and Microsoft Word is designed
@@ -673,7 +673,7 @@
         Convert it to plain ASCII text with [[http://directory.fsf.org/wiki/Docx2txt][Docx2txt]].
     #+END_NOTES
 *** =.ibooks= ([[http://venomousporridge.com/post/16126436616/ibooks-author-eula-audacity][Apple's EULA]] restricts commercial distribution to Apple)
-    {{{img-url(http://roughlydrafted.com/RD/RDM.Tech.Q1.07/2A351C60-A4E5-4764-A083-FF8610E66A46.html,This is Foulplay!,This is Foulplay!,/img/foulplay.png,60%)}}} \\
+    {{{img-url(http://roughlydrafted.com/RD/RDM.Tech.Q1.07/2A351C60-A4E5-4764-A083-FF8610E66A46.html,This is Foulplay!,,This is Foulplay!,/img/foulplay.png,60%)}}} \\
 
     + If [[http://www.defectivebydesign.org/macappstore][Apple's DRM, Fairplay,]] has been applied to an eBook: The
       *DRM* will remove basic freedoms that you'd normally have when
@@ -683,7 +683,7 @@
       digital restrictions-- /Foulplay/ is a better term for this
       malware, since it's [[https://archive.org/details/drm-prevents-interoperability][designed to disobey you]].
 *** /Google Books/
-    {{{img-url(https://www.gnu.org/philosophy/who-does-that-server-really-serve,Google's server dictates your use of eBooks!,Google's server dictates your use of eBooks!,/img/evil-google-logo.jpg,30%)}}} \\
+    {{{img-url(https://www.gnu.org/philosophy/who-does-that-server-really-serve,Google's server dictates your use of eBooks!,,Google's server dictates your use of eBooks!,/img/evil-google-logo.jpg,30%)}}} \\
     - These eBooks originate from https://books.google.com/ and from
       /Google Play/, and use free formats like =EPUB= and =PDF=;
       unfortunately, /Google Books/ are listed here, because Google
@@ -739,7 +739,7 @@
         JavaScript in order to do so-- which is a trap.
     #+END_NOTES
 *** =.azw= / =.kf8= (Amazon Kindle; this format [[http://www.defectivebydesign.org/amazon-kindle-swindle][implements a malware anti-feature known as DRM]])
-    {{{img-url(http://novelconclusions.com/2013/02/17/drm-do-i-own-my-e-books/,Google's server dictates your use of eBooks!,Google's server dictates your use of eBooks!,/img/open-drmed-lit-with-calibre.jpg,60%)}}} \\
+    {{{img-url(http://novelconclusions.com/2013/02/17/drm-do-i-own-my-e-books/,Google's server dictates your use of eBooks!,,Google's server dictates your use of eBooks!,/img/open-drmed-lit-with-calibre.jpg,60%)}}} \\
     + Amazon Kindles implement [[http://www.defectivebydesign.org/blog/670][spyware (just like Amazon's Unbox)]],
       which can inform Amazon on what books you purchased; which you
       are reading; what page you are on; which [[https://www.techdirt.com/articles/20100511/1018059377.shtml][words you've
@@ -813,13 +813,13 @@
       program that users *CAN* control.
     #+END_NOTES
 *** =.mobi= (Mobipocket; is infected with *DRM*)
-    {{{img-url(http://www.ebook-drm-removal.com/media-voices-e-book-publishers-should-abandon-drm-technology-management/,Libraries Against DRM,Libraries Against DRM,/img/librarians_against_drm.jpg,30%)}}}
+    {{{img-url(http://www.ebook-drm-removal.com/media-voices-e-book-publishers-should-abandon-drm-technology-management/,Libraries Against DRM,,Libraries Against DRM,/img/librarians_against_drm.jpg,30%)}}}
     + Amazon also controls this format, and it uses a similar *DRM*
       scheme as it's =.azw= counterpart.
 *** =.lit= (Microsoft[fn:4] Reader)
-    {{{img-url(https://technet.microsoft.com/it-it/sysinternals/cc838192%28v=vs.110%29.aspx,Controlling you is their specialty... hiding the fact that they do\, is not.,Controlling you is their specialty... hiding the fact that they do\, is not.,/img/DRM_Full_Concept.png,20%)}}}
-    {{{img-url(http://www.geek.com/games/microsoft-kills-safedisc-drm-on-windows-7-and-8-1634869/,Game Over!,Game Over!,/img/drm-625x350.jpg,40%)}}}
-    {{{img-url(http://wasduk.com/2013/12/18/microsoft-drm-very-sorry-over-its-actions-in-new-york/,Nonfree Software-- playing around with your freedom...,Nonfree Software-- playing around with your freedom...,/img/ki-lockdown.jpg,33%)}}} \\
+    {{{img-url(https://technet.microsoft.com/it-it/sysinternals/cc838192%28v=vs.110%29.aspx,Controlling you is their specialty... hiding the fact that they do\, is not.,,Controlling you is their specialty... hiding the fact that they do\, is not.,/img/DRM_Full_Concept.png,20%)}}}
+    {{{img-url(http://www.geek.com/games/microsoft-kills-safedisc-drm-on-windows-7-and-8-1634869/,Game Over!,,Game Over!,/img/drm-625x350.jpg,40%)}}}
+    {{{img-url(http://wasduk.com/2013/12/18/microsoft-drm-very-sorry-over-its-actions-in-new-york/,Nonfree Software-- playing around with your freedom...,,Nonfree Software-- playing around with your freedom...,/img/ki-lockdown.jpg,33%)}}} \\
     + This format is also infected with *DRM*, just like everything
       else that exists in Windows.  It's one thing for users to
       give Microsoft control of their computers, but when they also
