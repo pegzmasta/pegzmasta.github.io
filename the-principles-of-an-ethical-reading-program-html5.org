@@ -148,7 +148,7 @@
     for Marines if they wish to continue their reading or education online.
     #+END_NOTES
 *** Let's Read-- Professionals read to learn more about their professions
-  [[http://dangerousintersection.org/wp-content/uploads/2012/04/misspelling.jpg]]
+  [[/img/misspelling.jpg]]
 
   #+BEGIN_NOTES
   As you can see, reading can be fun!  More importantly, eBooks can be
