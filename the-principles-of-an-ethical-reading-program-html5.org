@@ -148,7 +148,7 @@
     for Marines if they wish to continue their reading or education online.
     #+END_NOTES
 *** Let's Read-- Professionals read to learn more about their professions
-  [[/img/misspelling.jpg]]
+  {{{img-url-2(Can you read this?,Can you read this?,/img/misspelling.jpg,60%,center)}}} \\
 
   #+BEGIN_NOTES
   As you can see, reading can be fun!  More importantly, eBooks can be
