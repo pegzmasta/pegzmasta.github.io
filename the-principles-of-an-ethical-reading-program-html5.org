@@ -836,6 +836,10 @@
       http://d1g4b464qmnt1q.cloudfront.net/p/img/drmtoday-workflow-4.gif \\
     - This is complicated!  Explain it in terms that /anyone/ can
       understand? \\
+      #+BEGIN_HTML
+      <iframe src="https://archive.org/embed/drm-prevents-interoperability" width="600" height="350" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen>
+      </iframe>
+    #+END_HTML
       #+ATTR_HTML: :width 640 :height 350 :frameborder 0 :mozallowfullscreen true
       https://archive.org/details/TrustedComputing
     #+BEGIN_NOTES
