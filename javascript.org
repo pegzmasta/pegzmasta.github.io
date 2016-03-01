@@ -1,7 +1,7 @@
 # -*- Mode: Org -*-
 #+TITLE:     The Principles of an Ethical Reading Program
 #+AUTHOR:    Michael Pagan
-#+DATE:      February 29, 2016
+#+DATE:      January 30, 2016
 #+EMAIL:     mailto:michael.pagan@member.fsf.org
 #+HTML_HEAD_EXTRA:<script>
 #+HTML_HEAD_EXTRA:/** @licstart  The following is the entire license notice for the
