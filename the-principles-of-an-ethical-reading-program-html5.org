@@ -40,8 +40,9 @@
 #+REVEAL_POSTAMBLE: <p> Created by yjwen. </p>
 #+REVEAL_PLUGINS: (markdown notes)
 #+REVEAL_EXTRA_CSS: ./local.css
-#+STARTUP:  showeverything
-#+LANGUAGE: en
+#+STARTUP:      showeverything
+#+LANGUAGE:     en
+#+HTML_DOCTYPE: HTML5
 
 #+COMMENT: Copied from <https://gist.github.com/JGallardo/6077195>
 #+BEGIN_HTML
@@ -263,19 +264,9 @@
     all authors, purveyors, vendors, and libraries will follow suit-- they
     should be applied to eBooks and printed books alike:
 *** How should authors create an eBook?
-    #+COMMENT: {{{img-url(http://www.gnu.org/,Free Software\, Free Society,Free Software\,, Free Society,http://www.gnu.org/graphics/meditate.svg,30%)}}} \\
-
-    #+BEGIN_COMMENT
-    I can't figure out how this code works...
-    #+ATTR_HTML: :controls controls :width 350
-    #+BEGIN_VIDEO
-    #+HTML: <source src="https://static.fsf.org/nosvn/FSF30-video/FSF_30_video.ogv" type="video/ogg">
-    Your browser does not support the video tag.
-    #+END_VIDEO
-    #+END_COMMENT
-
+    #+ATTR_HTML: :controls controls :width 50% :poster http://static.fsf.org/nosvn/FSF30-video/fsf30-poster.png :crossorigin anonymous
+    #+BEGIN_video
     #+BEGIN_HTML
-    <video style="width: 50%;" controls="controls" poster="http://static.fsf.org/nosvn/FSF30-video/fsf30-poster.png" crossorigin="anonymous">
     <source src="http://static.fsf.org/nosvn/FSF30-video/FSF_30_720p.webm" type="video/webm" />
     <track kind="subtitles" label="English" srclang="en" src="http://static.fsf.org/nosvn/FSF30-video/captions/FSF_30_720p.en.vtt" default="default" />
     <track kind="subtitles" label="Spanish" srclang="es" src="http://static.fsf.org/nosvn/FSF30-video/captions/FSF_30_es.vtt" />
@@ -293,8 +284,9 @@
     <track kind="subtitles" label="lietuvių" srclang="lt" src="http://static.fsf.org/nosvn/FSF30-video/captions/FSF_30_720p.lt.vtt" />
     <track kind="subtitles" label="hebrew" srclang="lt" src="http://static.fsf.org/nosvn/FSF30-video/captions/FSF_30_720p.he.vtt" />
     <track kind="subtitles" label="português do Brasil" srclang="pt-br" src="http://static.fsf.org/nosvn/FSF30-video/captions/FSF_30_720p.pt-br.vtt" />
-    </video>
     #+END_HTML
+    Your browser does not support the video tag.
+    #+END_video
     *Free/Libre Software* \\
 
     #+BEGIN_QUOTE
@@ -844,10 +836,8 @@
       http://d1g4b464qmnt1q.cloudfront.net/p/img/drmtoday-workflow-4.gif \\
     - This is complicated!  Explain it in terms that /anyone/ can
       understand? \\
-      #+BEGIN_HTML
-      <iframe src="https://archive.org/embed/drm-prevents-interoperability" width="640" height="350" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen>
-      </iframe>
-      #+END_HTML
+      #+ATTR_HTML: :width 640 :height 350 :frameborder 0 :mozallowfullscreen true
+      https://archive.org/embed/drm-prevents-interoperability
     #+BEGIN_NOTES
     - I've mentioned that many of these formats impose *DRM* on the user.
       Proponents of this malware will argue that it provides a "[[http://www.drmtoday.com/how-it-works][secure
