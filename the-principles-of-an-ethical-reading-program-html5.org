@@ -5,22 +5,6 @@
 #+EMAIL:     mailto:michael.pagan@member.fsf.org
 #+SUBTITLE:  =The future of free/libre eBooks=
 
-#+LATEX_CLASS:         book
-#+LATEX_CLASS_OPTIONS: [oneside]
-#+LATEX_HEADER:        \usepackage{color,soul}
-#+LATEX_HEADER:        \usepackage[margin=1.0in]{geometry}
-#+LATEX_HEADER:        \newcommand{\adjustimg}{% Horizontal adjustment of image
-#+LATEX_HEADER:        }
-#+LATEX_HEADER:        \newcommand{\centerimg}[2][width=\textwidth]{% Center an image
-#+LATEX_HEADER:          \makebox[\textwidth]{\adjustimg\includegraphics[#1]{#2}}%
-#+LATEX_HEADER:        }
-#+LATEX_HEADER:        \clearpage\thispagestyle{empty}
-#+LATEX_HEADER:        \noindent\centerimg[width=\paperwidth,height=\paperwidth]{cover.jpg}
-
-#+MACRO: creator   [[http://www.gnu.org/software/emacs/][Emacs]] 24.5.1 ([[http://orgmode.org/][Org]] mode 8.3.2)
-#+MACRO: updated   {{{time(%B)}}} {{{time(%d)}}}, {{{time(%Y)}}} at {{{time(%T)}}}
-#+MACRO: version   Version 0.1-- last updated on {{{updated}}}
-#+MACRO: txt-url   @@html:<a href="$1" $2>$3</a>@@
 #+MACRO: img-url   @@html:<a href="$1" title="$2" target="_blank" $3><img alt="$4" src="$5" width="$6" /></a>@@
 #+MACRO: img-url-2 @@html:<img alt="$1" title="$2" src="$3" width="$4" align="$5" /></a>@@
 #+MACRO: emphasize @@html:<b><center><div style="background-color: $1; color: $2;">$3</div></center></b>@@
