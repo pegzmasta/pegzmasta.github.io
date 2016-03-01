@@ -837,7 +837,7 @@
     - This is complicated!  Explain it in terms that /anyone/ can
       understand? \\
       #+ATTR_HTML: :width 640 :height 350 :frameborder 0 :mozallowfullscreen true
-      https://archive.org/embed/drm-prevents-interoperability
+      https://archive.org/details/TrustedComputing
     #+BEGIN_NOTES
     - I've mentioned that many of these formats impose *DRM* on the user.
       Proponents of this malware will argue that it provides a "[[http://www.drmtoday.com/how-it-works][secure
