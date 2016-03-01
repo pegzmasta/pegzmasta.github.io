@@ -117,9 +117,9 @@ for the JavaScript code in this tag.
 #+ATTR_HTML: :id jslicense-labels1 :border 2 :rules all :frame border
 | Script      | License | Source    |
 |-------------+---------+-----------|
-| [[https://raw.githubusercontent.com/pegzmasta/pegzmasta.github.io/master/reveal.js/lib/js/head.min.js][head.min.js]] | [[https://github.com/pegzmasta/pegzmasta.github.io/blob/master/reveal.js/LICENSE][Expat]]   | [[https://raw.githubusercontent.com/headjs/headjs/master/dist/1.0.0/head.js][head.js]]   |
-| [[https://raw.githubusercontent.com/pegzmasta/pegzmasta.github.io/master/reveal.js/plugin/notes/notes.js][notes.js]]    | [[https://github.com/pegzmasta/pegzmasta.github.io/blob/master/reveal.js/LICENSE][Expat]]   | [[https://raw.githubusercontent.com/pegzmasta/pegzmasta.github.io/master/reveal.js/plugin/notes/notes.js][notes.js]]  |
-| [[https://raw.githubusercontent.com/pegzmasta/pegzmasta.github.io/master/reveal.js/js/reveal.js][reveal.js]]   | [[https://github.com/pegzmasta/pegzmasta.github.io/blob/master/reveal.js/LICENSE][Expat]]   | [[https://raw.githubusercontent.com/pegzmasta/pegzmasta.github.io/master/reveal.js/js/reveal.js][reveal.js]] |
+| [[https://raw.githubusercontent.com/pegzmasta/pegzmasta.github.io/master/reveal.js/lib/js/head.min.js][head.min.js]] | [[https://raw.githubusercontent.com/pegzmasta/pegzmasta.github.io/master/reveal.js/LICENSE][Expat]]   | [[https://raw.githubusercontent.com/headjs/headjs/master/dist/1.0.0/head.js][head.js]]   |
+| [[https://raw.githubusercontent.com/pegzmasta/pegzmasta.github.io/master/reveal.js/plugin/notes/notes.js][notes.js]]    | [[https://raw.githubusercontent.com/pegzmasta/pegzmasta.github.io/master/reveal.js/LICENSE][Expat]]   | [[https://raw.githubusercontent.com/pegzmasta/pegzmasta.github.io/master/reveal.js/plugin/notes/notes.js][notes.js]]  |
+| [[https://raw.githubusercontent.com/pegzmasta/pegzmasta.github.io/master/reveal.js/js/reveal.js][reveal.js]]   | [[https://raw.githubusercontent.com/pegzmasta/pegzmasta.github.io/master/reveal.js/LICENSE][Expat]]   | [[https://raw.githubusercontent.com/pegzmasta/pegzmasta.github.io/master/reveal.js/js/reveal.js][reveal.js]] |
 
 #+HTML: </div>
 {{{copyleft(Blue, 2015-2016 Michael Pagan)}}}
